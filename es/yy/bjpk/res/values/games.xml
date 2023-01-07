@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arrGameAddr">
+        <item>http://kcvip99.com</item>
+        <item>http://www.bnb83.com</item>
+        <item>状元彩票网</item>
+        <item>其它(通用)</item>
+    </string-array>
+    <string-array name="arrGames">
+        <item>北京赛车</item>
+        <item>重庆时时彩</item>
+        <item>75秒赛车</item>
+        <item>75秒时时彩</item>
+        <item>幸运飞艇</item>
+    	<item>澳洲赛车</item>  
+    	<item>澳洲时时彩</item> 
+    	<item>香港六合彩</item> 
+    	<item>幸运农场</item> 
+    	<item>澳洲快乐十分</item> 
+    	<item>广东快乐十分</item> 
+    	<item>天津时时彩</item> 
+    	<item>新疆时时彩</item> 
+    </string-array>
+    <string-array name="arrGameBetWay">
+        <item>两面盘</item>
+        <item>单号1~10</item>
+        <item>冠亚军组合</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,201 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bj" >
+
+   <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+<!-- +++++++++++++++++++++++++++++++++++++++++免责声明+++++++++++++++++++++++++++++++++++++ -->        
+            <TextView
+            android:id="@+id/tvNoDuty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="使用说明"
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+         <TextView
+            android:id="@+id/tvNoDutyContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="1.功能一，一键自动添加微信群好友和QQ群好友；\n2.功能二 ，自动滚动朋友相册及打开视频；\n2.进群成员列表如果没有显示【添加】按钮，请到手机【设置】，设置允许悬浮窗口。"
+            android:textColor="#ffff00"
+            android:textSize="16sp" />
+<!-- +++++++++++++++++++++++++++++++++++++++++功能说明++++++++++++++++++++++++++++++++++++ -->
+        <ImageView
+            android:id="@+id/iv0"
+            android:layout_width="fill_parent"
+            android:layout_height="15dp"
+            android:layout_weight="0.21"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY"
+            android:src="@drawable/tiao" />
+  <!-- ++++++++++++++++++++++++++++++加人时说的话++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <TextView
+            android:id="@+id/tvAddFriendSay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="请输入加人问候语："
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+         <EditText
+            android:id="@+id/etAddFriendSay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+   <!-- ++++++++++++++++++++++++++++++朋友相册下拉至的时间+++++++++++++++++++++++++++++++++++++ -->
+
+        <TextView
+            android:id="@+id/tvScollGalleryDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="请输入滚动相册到达的日期："
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+         <EditText
+            android:id="@+id/etScrollGalleryDownDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2017-09-18"/>        
+ <!-- +++++++++++++++++++++++语音模式 +++++++++++++++++++++++++++++++++++++++++++ -->
+        <TextView
+            android:id="@+id/tvSelSoundMode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="请选择发音模式："
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+  			<com.example.h3.FlowRadioGroup
+                android:id="@+id/rgSelSoundMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:orientation="horizontal" >
+                <RadioButton
+                    android:id="@+id/rbFemaleSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="女声" />
+                <RadioButton
+                    android:id="@+id/rbMaleSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男声" />
+                <RadioButton
+                    android:id="@+id/rbSpecialMaleSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="特别男声" />
+                <RadioButton
+                    android:id="@+id/rbMotionMaleSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="情感男声" />
+                 <RadioButton
+                    android:id="@+id/rbChildrenSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="情感儿童声" />
+                <RadioButton
+                    android:id="@+id/rbCloseSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关闭语音提示" />
+           </com.example.h3.FlowRadioGroup> 
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="开启服务" />
+
+            <Button
+                android:id="@+id/btConcel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="启动微信" />
+           <Button
+                android:id="@+id/btClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="启动QQ" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvRegState"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="授权状态：未授权"
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvRegWarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="警告：未授权用户速度较慢！技术及授权联系QQ：1339524332微信byc6354。"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+       <TextView
+            android:id="@+id/tvHomePage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:text="官方下载地址：\nhttp://119.23.68.205/android/index.htm"
+            android:textColor="#0000ff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvPlease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="请输入授权码："
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etRegCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLength="12" 
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定" />
+    </LinearLayout>
+
+</ScrollView>

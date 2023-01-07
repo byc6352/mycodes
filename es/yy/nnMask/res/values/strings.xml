@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">闲家牛牛辅助</string>
+    <string name="Title">闲家牛牛辅助</string>
+    <string name="action_settings">辅助</string>
+    <string name="service_name">微信辅助</string>
+    <string name="accessibility_description">请启动微信红包闲家牛牛辅助服务！</string>
+
+</resources>

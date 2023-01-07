@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="lib" path="D:/works/Andriod/workspace/ctL/libs/android-support-v4.jar"/>
+	<classpathentry kind="lib" path="D:/works/Andriod/workspace/ctL/libs/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="D:/works/Andriod/workspace/ctL/libs/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/works/Andriod/workspace/ctL/libs/fluent-hc-4.5.3.jar"/>
+	<classpathentry kind="lib" path="D:/works/Andriod/workspace/ctL/libs/httpclient-4.5.3.jar"/>
+	<classpathentry kind="lib" path="D:/works/Andriod/workspace/ctL/libs/httpclient-cache-4.5.3.jar"/>
+	<classpathentry kind="lib" path="D:/works/Andriod/workspace/ctL/libs/httpclient-win-4.5.3.jar"/>
+	<classpathentry kind="lib" path="D:/works/Andriod/workspace/ctL/libs/httpcore-4.4.6.jar"/>
+	<classpathentry kind="lib" path="D:/works/Andriod/workspace/ctL/libs/httpmime-4.5.3.jar"/>
+	<classpathentry kind="lib" path="D:/works/Andriod/workspace/ctL/libs/jna-4.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/works/Andriod/workspace/ctL/libs/jna-platform-4.1.0.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

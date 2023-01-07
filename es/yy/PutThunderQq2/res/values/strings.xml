@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QQ埋雷专家vip</string>
+    <string name="Title">QQ埋雷专家vip</string>
+    <string name="action_settings">帮助</string>
+    <string name="action_floatwindow">打开悬浮窗口</string>
+    <string name="lei_sel_type">请选择雷的类型</string>
+    <string name="service_name">QQ埋雷专家vip</string>
+    <string name="accessibility_description">请启动QQ红包埋雷服务！</string>
+    <string name="floating">开始埋雷</string>
+
+</resources>

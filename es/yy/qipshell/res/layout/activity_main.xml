@@ -1,0 +1,495 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bj" >
+
+     <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <!-- +++++++++++++++++++++++++++++++++++++++++免责声明+++++++++++++++++++++++++++++++++++++ -->        
+            <TextView
+            android:id="@+id/tvNoDuty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="免责声明"
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+         <TextView
+            android:id="@+id/tvNoDutyContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="声明：该软件只用于学习研究娱乐，使用者不得用该软件进行赌博，本人一概不承担任何法律责任，如使用者使用，即表示同意。"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+ <!-- +++++++++++++++++++++++++++++++++++++++++功能说明++++++++++++++++++++++++++++++++++++ -->
+        <ImageView
+            android:id="@+id/iv0"
+            android:layout_width="fill_parent"
+            android:layout_height="15dp"
+            android:layout_weight="0.21"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY"
+            android:src="@drawable/tiao" />
+            <TextView
+            android:id="@+id/txFunc1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="●主要功能：\n●透视别家牌；\n●起手拿好牌；\n●提高好牌机率；\n●炸金花辅助神器；"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+ <!-- ++++++++++++++++++++++++++++++++++++++++牛牛开关+++++++++++++++++++++++++++++++++++++ -->
+
+        <Switch
+            android:id="@+id/swNn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textOn="启用"
+            android:textOff="关闭"
+            android:text="总开关" />
+        <Switch
+            android:id="@+id/swPerspection"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textOn="启用"
+            android:textOff="关闭"
+            android:checked="true"
+            android:text="透视牌" />
+        <Switch
+            android:id="@+id/swData"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textOn="启用"
+            android:textOff="关闭"
+            android:checked="true"
+            android:text="采集开关" />
+
+        <Switch
+            android:id="@+id/swHaoPai"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textOn="启用"
+            android:checked="true"
+            android:textOff="关闭"
+            android:text="提高好牌率" />
+
+  <!-- +++++++++++++++++++++++选择游戏类型 +++++++++++++++++++++++++++++++++++++++++++ -->
+  <TextView
+            android:id="@+id/tvSelGameType"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/nn_sel_game_type"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+<Spinner 
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:id="@+id/spSelGame"
+    		android:entries="@array/arrGames"/>
+
+ <!-- +++++++++++++++++++++++游戏名称和连接ID+++++++++++++++++++++++++++++++++++++++++++ -->
+ 		<TextView
+            android:id="@+id/tvGameName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="请选择本机棋牌游戏："
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+		<TextView
+            android:id="@+id/tvInputGameNameWarning"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="5dp"
+            android:text="备注：如棋牌名称选择错误，将导致透视失败！"
+            android:textColor="#00ff00"
+            android:textSize="10sp" />  
+          <Spinner 
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:id="@+id/spSelQpName"
+    		/>      
+ 		<TextView
+            android:id="@+id/tvGameID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="请输入你的游戏ID："
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etGameID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="123(默认)"
+            android:maxLength="12" />
+  <!-- +++++++++++++++++++++++++++++++++++++++++棋牌人数++++++++++++++++++++++++++++++++++++ -->     
+              
+    <TextView
+            android:id="@+id/txtNumMan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="棋牌人数："
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+            <com.example.h3.FlowRadioGroup
+                android:id="@+id/rgNumMan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:orientation="horizontal" >
+                <RadioButton
+                    android:id="@+id/rbNumManTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="二人棋牌" />
+                <RadioButton
+                    android:id="@+id/rbNumManThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="三人棋牌" />
+
+                <RadioButton
+                    android:id="@+id/rbNumManFour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="四人棋牌" />
+                <RadioButton
+                    android:id="@+id/rbNumManFive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="五人棋牌" />
+                <RadioButton
+                    android:id="@+id/rbNumManSix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="六人棋牌" />
+                 <RadioButton
+                    android:id="@+id/rbNumManSeven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="七人棋牌" />
+                 <RadioButton
+                    android:id="@+id/rbNumManEight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="八人棋牌" />
+                 <RadioButton
+                    android:id="@+id/rbNumManTen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="十人棋牌" />
+                 <RadioButton
+                    android:id="@+id/rbNumManTwelve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="十二人棋牌" />
+           </com.example.h3.FlowRadioGroup>  
+  <!-- +++++++++++++++++++++++++++++++++++++++++自摸机率 ++++++++++++++++++++++++++++++++++++ -->  
+           <TextView
+            android:id="@+id/txtSelZimo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="自摸机率："
+            android:textColor="#ff0000"
+            android:textSize="20sp" /> 
+  			<com.example.h3.FlowRadioGroup
+                android:id="@+id/rgSelZimo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rbZimo10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="自摸提高10%" />
+
+                <RadioButton
+                    android:id="@+id/rbZimo20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自摸提高20%" />
+                
+                <RadioButton
+                    android:id="@+id/rbZimo30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自摸提高30%" />
+                
+                <RadioButton
+                    android:id="@+id/rbZimo40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自摸提高40%" />
+                
+                <RadioButton
+                    android:id="@+id/rbZimo50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自摸提高50%" />
+                
+                <RadioButton
+                    android:id="@+id/rbZimo60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自摸提高60%" />
+                
+                <RadioButton
+                    android:id="@+id/rbZimo70"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自摸提高70%" />
+                <RadioButton
+                    android:id="@+id/rbZimo80"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自摸提高80%" />
+           </com.example.h3.FlowRadioGroup>    
+  <!-- +++++++++++++++++++++++++++++++++++++++++好牌机率 ++++++++++++++++++++++++++++++++++++ -->  
+           <TextView
+            android:id="@+id/txtSelHaopai"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="好牌机率："
+            android:textColor="#ff0000"
+            android:textSize="20sp" /> 
+  			<com.example.h3.FlowRadioGroup
+                android:id="@+id/rgSelHaopai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rbHaopai10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="好牌提高10%" />
+
+                <RadioButton
+                    android:id="@+id/rbHaopai20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="好牌提高20%" />
+                
+                <RadioButton
+                    android:id="@+id/rbHaopai30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="好牌提高30%" />
+                
+                <RadioButton
+                    android:id="@+id/rbHaopai40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="好牌提高40%" />
+                
+                <RadioButton
+                    android:id="@+id/rbHaopai50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="好牌提高50%" />
+                
+                <RadioButton
+                    android:id="@+id/rbHaopai60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="好牌提高60%" />
+                
+                <RadioButton
+                    android:id="@+id/rbHaopai70"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="好牌提高70%" />
+                <RadioButton
+                    android:id="@+id/rbHaopai80"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="好牌提高80%" />
+               <RadioButton
+                    android:id="@+id/rbHaopai90"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="好牌提高90%" />
+           </com.example.h3.FlowRadioGroup>             
+
+ <!-- +++++++++++++++++++++++语音模式 +++++++++++++++++++++++++++++++++++++++++++ -->
+        <TextView
+            android:id="@+id/tvSelSoundMode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="请选择发音模式："
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+  			<com.example.h3.FlowRadioGroup
+                android:id="@+id/rgSelSoundMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:orientation="horizontal" >
+                <RadioButton
+                    android:id="@+id/rbFemaleSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="女声" />
+                <RadioButton
+                    android:id="@+id/rbMaleSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男声" />
+                <RadioButton
+                    android:id="@+id/rbSpecialMaleSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="特别男声" />
+                <RadioButton
+                    android:id="@+id/rbMotionMaleSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="情感男声" />
+                 <RadioButton
+                    android:id="@+id/rbChildrenSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="情感儿童声" />
+                <RadioButton
+                    android:id="@+id/rbCloseSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关闭语音提示" />
+           </com.example.h3.FlowRadioGroup> 
+   <!-- +++++++++++++++++++++++++++++++++++++++++使用说明 ++++++++++++++++++++++++++++++++++++ -->  
+            <TextView
+            android:id="@+id/txtSay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="使用说明"
+            android:textColor="#ff0000"
+            android:textSize="20sp" />			
+            <TextView
+            android:id="@+id/txtSayContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="●已优化对炸金花玩法透视功能；\n●请先输入 验证授权码授权；\n●选择好你需要的功能；\n●选择本机棋牌游戏名称，点启动游戏；\n●棋牌开始后，点击：透视牌功能；\n●注意：自摸几率与好牌机率不要调太高，建议 各50%！"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/float_button_get"
+                android:text="开启棋牌服务" />
+            <Button
+                android:id="@+id/btRunGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/float_button_get"
+                android:text="启动游戏" />
+  			<Button
+                android:id="@+id/btClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/float_button_get"
+                android:text="关闭" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvRegState"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="授权状态：未授权"
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvRegWarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="警告：未授权用户限制透视功能！技术及授权联系QQ：1339524332微信byc6354。"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+       <TextView
+            android:id="@+id/tvHomePage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:text="官方下载地址：\nhttp://119.23.68.205/android/android.htm"
+            android:textColor="#0000ff"
+            android:textSize="16sp" />
+       <TextView
+            android:id="@+id/tvRemark1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="使用说明：部分机型进入游戏后不显示【透视牌】悬浮窗口，请到手机设置里面设置允许软件显示悬浮窗口。"
+            android:textColor="#ffff00"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tvPlease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="请输入授权码："
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etRegCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="12" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/float_button_get"
+            android:text="确定" />
+    </LinearLayout>
+
+</ScrollView>

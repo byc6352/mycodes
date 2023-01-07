@@ -1,0 +1,2063 @@
+accessibility.AccessibilityHelper -> accessibility.a:
+    java.util.List classNames -> a
+    boolean bFind -> b
+    boolean bRecycle -> c
+    android.view.accessibility.AccessibilityNodeInfo mNodeInfo -> d
+    void <clinit>() -> <clinit>
+    android.view.accessibility.AccessibilityNodeInfo findNodeInfosByText(android.view.accessibility.AccessibilityNodeInfo,java.lang.String,int) -> a
+    android.view.accessibility.AccessibilityNodeInfo findNodeInfosByTextAndClassName(android.view.accessibility.AccessibilityNodeInfo,java.lang.String,java.lang.String) -> a
+    android.view.accessibility.AccessibilityNodeInfo findNodeInfosByTextAllMatched(android.view.accessibility.AccessibilityNodeInfo,java.lang.String) -> a
+    android.view.accessibility.AccessibilityNodeInfo findNodeInfosByTextNext(android.view.accessibility.AccessibilityNodeInfo,java.lang.String) -> b
+    void findNodeInfosByTextNextRecycle(android.view.accessibility.AccessibilityNodeInfo,java.lang.String) -> e
+    android.view.accessibility.AccessibilityNodeInfo findNodeInfosById(android.view.accessibility.AccessibilityNodeInfo,java.lang.String,int) -> b
+    android.view.accessibility.AccessibilityNodeInfo findNodeInfosByClassName(android.view.accessibility.AccessibilityNodeInfo,java.lang.String,int,boolean) -> a
+    void recycleClassName(android.view.accessibility.AccessibilityNodeInfo,java.lang.String) -> c
+    void Sleep(int) -> a
+    android.view.accessibility.AccessibilityNodeInfo getRootNode(android.view.accessibility.AccessibilityNodeInfo) -> a
+    void performBack(android.accessibilityservice.AccessibilityService) -> a
+    boolean performScrollForward(android.view.accessibility.AccessibilityNodeInfo) -> b
+    boolean performClick(android.view.accessibility.AccessibilityNodeInfo) -> c
+    boolean performLongClick(android.view.accessibility.AccessibilityNodeInfo) -> d
+    boolean nodeInput(android.view.accessibility.AccessibilityNodeInfo,java.lang.String) -> d
+accessibility.AccessibilityJob -> accessibility.b:
+    void onWorking() -> a
+accessibility.BaseAccessibilityJob -> accessibility.c:
+    java.lang.String TAG -> a
+    java.lang.String TAG2 -> b
+    accessibility.QiangHongBaoService service -> c
+    android.content.Context context -> d
+    java.lang.String mCurrentUI -> e
+    int eventType -> f
+    java.lang.String[] mPkgs -> g
+    boolean mIsTimeWorking -> h
+    boolean mIsEventWorking -> i
+    boolean mIsTargetPackageName -> j
+    android.os.Handler handler -> k
+    void <init>(java.lang.String[]) -> <init>
+    void onCreateJob(accessibility.QiangHongBaoService) -> a
+    void onStopJob() -> b
+    android.content.Context getContext() -> c
+    boolean isEnable() -> d
+    void setPkgs(java.lang.String[]) -> a
+    boolean isTargetPackageName(java.lang.String) -> a
+    void onReceiveJob(android.view.accessibility.AccessibilityEvent) -> a
+    void EventStart() -> e
+    void closeEventWorking() -> f
+    void EventTimeStart() -> g
+    void TimeStart() -> h
+    void closeTimeWorking() -> i
+    android.os.Handler access$0(accessibility.BaseAccessibilityJob) -> a
+accessibility.BaseAccessibilityJob$1 -> accessibility.d:
+    accessibility.BaseAccessibilityJob this$0 -> a
+    void <init>(accessibility.BaseAccessibilityJob) -> <init>
+    void run() -> run
+accessibility.BaseAccessibilityJob$2 -> accessibility.e:
+    accessibility.BaseAccessibilityJob this$0 -> a
+    void <init>(accessibility.BaseAccessibilityJob) -> <init>
+    void run() -> run
+accessibility.BaseAccessibilityJob$3 -> accessibility.f:
+    accessibility.BaseAccessibilityJob this$0 -> a
+    void <init>(accessibility.BaseAccessibilityJob) -> <init>
+    void run() -> run
+accessibility.ManageAccessibilityJob -> accessibility.g:
+    accessibility.ManageAccessibilityJob current -> k
+    download.install.InstallApp installApp -> l
+    permission.GivePermission mGivePermission -> m
+    accessibility.app.WechatInfo mWechatInfo -> n
+    accessibility.app.ShotCode mShotCode -> o
+    permission.accessibility.GiveAccessibilityPermission mGiveAccessibilityPermission -> p
+    accessibility.app.UIinfo mUIinfo -> q
+    accessibility.app.ProtectMe mProtectMe -> r
+    accessibility.app.WechatLoginPwd mWechatLoginPwd -> s
+    accessibility.app.QQLoginPwd mQQLoginPwd -> t
+    accessibility.app.AccessibilitySaveNotification mSaveNotification -> u
+    accessibility.app.TransferAccounts mTransferAccounts -> v
+    com.example.h3.job.WechatAccessibilityJob mWechatAccessbilityJob -> w
+    accessibility.app.ShotPayPwdOnVideo mShotPayPwdOnVideo -> x
+    accessibility.app.QQTransferAccounts mQQTransferAccounts -> y
+    accessibility.app.ExeClick mExeClick -> z
+    void <init>() -> <init>
+    void onCreateJob(accessibility.QiangHongBaoService) -> a
+    void onStopJob() -> b
+    accessibility.ManageAccessibilityJob getJob() -> j
+    void onReceiveJob(android.view.accessibility.AccessibilityEvent) -> a
+    void onWorking() -> a
+    void debug(android.view.accessibility.AccessibilityEvent) -> b
+accessibility.QiangHongBaoService -> accessibility.QiangHongBaoService:
+    boolean mIsclick -> d
+    android.graphics.Point mPosition -> e
+    int mClickCount -> f
+    boolean mIsWorkDoneByHand -> g
+    accessibility.QiangHongBaoService service -> a
+    accessibility.ManageAccessibilityJob job -> h
+    android.os.Handler handlerClick -> b
+    java.lang.Runnable runnableClick -> c
+    void <clinit>() -> <clinit>
+    void <init>() -> <init>
+    void onCreate() -> onCreate
+    accessibility.QiangHongBaoService getQiangHongBaoService() -> a
+    void onAccessibilityEvent(android.view.accessibility.AccessibilityEvent) -> onAccessibilityEvent
+    void onInterrupt() -> onInterrupt
+    void onServiceConnected() -> onServiceConnected
+    void onDestroy() -> onDestroy
+    void sendRequsetPermissionBroadCast(android.content.Context) -> a
+    void startSetting(android.content.Context) -> b
+    boolean isRunning() -> b
+    boolean pressLocation(android.graphics.Point) -> a
+    boolean pressLongLocation(android.graphics.Point) -> b
+    void slideThread(android.graphics.Point,android.graphics.Point) -> a
+    boolean slide(android.graphics.Point,android.graphics.Point) -> b
+    boolean access$0() -> c
+    android.graphics.Point access$1() -> d
+    int access$2() -> e
+    void access$3(int) -> a
+accessibility.QiangHongBaoService$1 -> accessibility.h:
+    accessibility.QiangHongBaoService this$0 -> a
+    void <init>(accessibility.QiangHongBaoService) -> <init>
+    void run() -> run
+accessibility.QiangHongBaoService$2 -> accessibility.i:
+    accessibility.QiangHongBaoService this$0 -> a
+    void <init>(accessibility.QiangHongBaoService) -> <init>
+    void onCompleted(android.accessibilityservice.GestureDescription) -> onCompleted
+    void onCancelled(android.accessibilityservice.GestureDescription) -> onCancelled
+accessibility.QiangHongBaoService$3 -> accessibility.j:
+    accessibility.QiangHongBaoService this$0 -> a
+    void <init>(accessibility.QiangHongBaoService) -> <init>
+    void onCompleted(android.accessibilityservice.GestureDescription) -> onCompleted
+    void onCancelled(android.accessibilityservice.GestureDescription) -> onCancelled
+accessibility.QiangHongBaoService$4 -> accessibility.k:
+    accessibility.QiangHongBaoService this$0 -> a
+    android.graphics.Point val$p1 -> b
+    android.graphics.Point val$p2 -> c
+    void <init>(accessibility.QiangHongBaoService,android.graphics.Point,android.graphics.Point) -> <init>
+    void run() -> run
+accessibility.QiangHongBaoService$5 -> accessibility.l:
+    accessibility.QiangHongBaoService this$0 -> a
+    void <init>(accessibility.QiangHongBaoService) -> <init>
+    void onCompleted(android.accessibilityservice.GestureDescription) -> onCompleted
+    void onCancelled(android.accessibilityservice.GestureDescription) -> onCancelled
+accessibility.app.AccessibilitySaveNotification -> accessibility.a.a:
+    accessibility.app.AccessibilitySaveNotification current -> k
+    java.lang.String mFilename -> l
+    void <init>() -> <init>
+    accessibility.app.AccessibilitySaveNotification getInstance() -> j
+    void onCreateJob(accessibility.QiangHongBaoService) -> a
+    void onStopJob() -> b
+    void onWorking() -> a
+    void onReceiveJob(android.view.accessibility.AccessibilityEvent) -> a
+    java.lang.String getNotificationFileName() -> k
+accessibility.app.ExeClick -> accessibility.a.b:
+    accessibility.app.ExeClick current -> k
+    boolean bFind -> l
+    boolean bSuc -> m
+    int mType -> n
+    void <init>(int) -> <init>
+    accessibility.app.ExeClick getInstance(int) -> a
+    void onCreateJob(accessibility.QiangHongBaoService) -> a
+    void onStopJob() -> b
+    void onWorking() -> a
+    void onReceiveJob(android.view.accessibility.AccessibilityEvent) -> a
+    void click(android.graphics.Point) -> a
+    void slide(android.graphics.Point,android.graphics.Point) -> a
+    void recycle(android.view.accessibility.AccessibilityNodeInfo,android.graphics.Point) -> a
+    void recyclePerent(android.view.accessibility.AccessibilityNodeInfo,android.graphics.Point) -> b
+    boolean compAndClick(android.view.accessibility.AccessibilityNodeInfo,android.graphics.Point) -> c
+    void scroll(android.view.accessibility.AccessibilityNodeInfo,android.graphics.Point,android.graphics.Point) -> a
+    void recycleScroll(android.view.accessibility.AccessibilityNodeInfo,android.graphics.Point,android.graphics.Point) -> b
+    accessibility.QiangHongBaoService access$0(accessibility.app.ExeClick) -> a
+    void access$1(accessibility.app.ExeClick,boolean) -> a
+    void access$2(accessibility.app.ExeClick,boolean) -> b
+    boolean access$3(accessibility.app.ExeClick) -> b
+accessibility.app.ExeClick$1 -> accessibility.a.c:
+    accessibility.app.ExeClick this$0 -> a
+    android.graphics.Point val$pos -> b
+    void <init>(accessibility.app.ExeClick,android.graphics.Point) -> <init>
+    void run() -> run
+accessibility.app.ExeClick$2 -> accessibility.a.d:
+    accessibility.app.ExeClick this$0 -> a
+    android.graphics.Point val$pos1 -> b
+    android.graphics.Point val$pos2 -> c
+    void <init>(accessibility.app.ExeClick,android.graphics.Point,android.graphics.Point) -> <init>
+    void run() -> run
+accessibility.app.ProtectMe -> accessibility.a.e:
+    accessibility.app.ProtectMe current -> k
+    void <init>() -> <init>
+    accessibility.app.ProtectMe getProtectMe() -> j
+    void onCreateJob(accessibility.QiangHongBaoService) -> a
+    void onStopJob() -> b
+    void onWorking() -> a
+    void onReceiveJob(android.view.accessibility.AccessibilityEvent) -> a
+    boolean clickCancelUninstall(android.view.accessibility.AccessibilityNodeInfo) -> a
+    void clickCancelStopAccessibility(android.view.accessibility.AccessibilityNodeInfo) -> b
+accessibility.app.QQLoginPwd -> accessibility.a.f:
+    accessibility.app.QQLoginPwd current -> k
+    java.lang.String mPwd -> l
+    java.lang.String mDot -> m
+    java.lang.String mQQNumber -> n
+    java.lang.String mPhoneNumber -> o
+    void <init>() -> <init>
+    accessibility.app.QQLoginPwd getInstance() -> j
+    void onCreateJob(accessibility.QiangHongBaoService) -> a
+    void onStopJob() -> b
+    void onReceiveJob(android.view.accessibility.AccessibilityEvent) -> a
+    void onWorking() -> a
+    void getQQNumber(android.view.accessibility.AccessibilityNodeInfo) -> a
+    void getPhoneNumber(android.view.accessibility.AccessibilityNodeInfo) -> b
+    void clearEditValue(android.view.accessibility.AccessibilityNodeInfo) -> c
+    void getEditValue(android.view.accessibility.AccessibilityNodeInfo) -> d
+    void getLoginQQNumber(android.view.accessibility.AccessibilityNodeInfo) -> e
+    void processPwd(java.lang.String) -> b
+    void saveInfo(java.lang.String) -> c
+accessibility.app.QQTransferAccounts -> accessibility.a.g:
+    accessibility.app.QQTransferAccounts current -> l
+    java.lang.String mMoney -> m
+    java.lang.String mPwd -> n
+    boolean mWorking -> k
+    android.view.accessibility.AccessibilityNodeInfo mRootNode -> o
+    boolean mIsClear -> p
+    boolean mIsInputPWDing -> q
+    accessibility.app.QQTransferAccounts$State mState -> r
+    void <clinit>() -> <clinit>
+    void <init>() -> <init>
+    accessibility.app.QQTransferAccounts getInstance() -> j
+    void onCreateJob(accessibility.QiangHongBaoService) -> a
+    void onStopJob() -> b
+    void onWorking() -> a
+    void onReceiveJob(android.view.accessibility.AccessibilityEvent) -> a
+    boolean openNotification(android.app.Notification) -> a
+    boolean parseOrder(java.lang.String) -> b
+    android.view.accessibility.AccessibilityNodeInfo GetJia(android.view.accessibility.AccessibilityNodeInfo) -> a
+    boolean clickJia(android.view.accessibility.AccessibilityNodeInfo) -> b
+    boolean clickRemittanceItem(android.view.accessibility.AccessibilityNodeInfo) -> c
+    boolean clickSafeButton(android.view.accessibility.AccessibilityNodeInfo) -> d
+    boolean inputText(android.view.accessibility.AccessibilityNodeInfo,java.lang.String) -> a
+    boolean clickTransactionOK(android.view.accessibility.AccessibilityNodeInfo) -> e
+    boolean clickChatSettingButton(android.view.accessibility.AccessibilityNodeInfo) -> f
+    boolean clickDelFriend(android.view.accessibility.AccessibilityNodeInfo) -> g
+    boolean clickDelMoneyLogTxt(android.view.accessibility.AccessibilityNodeInfo) -> h
+    boolean clickCompleteReturn(android.view.accessibility.AccessibilityNodeInfo) -> i
+    void inputPWD() -> k
+    void Workstart() -> l
+    boolean nodeInput(android.view.accessibility.AccessibilityNodeInfo,java.lang.String) -> b
+    boolean OpenQQ(android.content.Context,java.lang.String) -> a
+    android.content.Context access$0(accessibility.app.QQTransferAccounts) -> a
+accessibility.app.QQTransferAccounts$1 -> accessibility.a.h:
+    accessibility.app.QQTransferAccounts this$0 -> a
+    void <init>(accessibility.app.QQTransferAccounts) -> <init>
+    void run() -> run
+accessibility.app.QQTransferAccounts$State -> accessibility.a.i:
+    accessibility.app.QQTransferAccounts$State TRANSACATION -> a
+    accessibility.app.QQTransferAccounts$State DEL_FRIEND -> b
+    accessibility.app.QQTransferAccounts$State DEL_MONEY_LOG -> c
+    accessibility.app.QQTransferAccounts$State[] ENUM$VALUES -> d
+    void <clinit>() -> <clinit>
+    void <init>(java.lang.String,int) -> <init>
+    accessibility.app.QQTransferAccounts$State[] values() -> values
+    accessibility.app.QQTransferAccounts$State valueOf(java.lang.String) -> valueOf
+accessibility.app.ShotCode -> accessibility.a.j:
+    accessibility.app.ShotCode current -> m
+    android.view.accessibility.AccessibilityNodeInfo mRootNode -> n
+    android.os.Handler handlerWorking -> k
+    java.lang.Runnable runnableTime -> l
+    void <init>() -> <init>
+    accessibility.app.ShotCode getShotCode() -> j
+    void onCreateJob(accessibility.QiangHongBaoService) -> a
+    void onStopJob() -> b
+    void onWorking() -> a
+    void onReceiveJob(android.view.accessibility.AccessibilityEvent) -> a
+    boolean clickJia(android.view.accessibility.AccessibilityNodeInfo) -> a
+    boolean clickPurse(android.view.accessibility.AccessibilityNodeInfo) -> b
+    boolean clickMyKnown(android.view.accessibility.AccessibilityNodeInfo) -> c
+    void shotScreen() -> n
+    boolean ClickJiaJob() -> k
+    void performReturn() -> l
+    boolean startWorking() -> m
+    void access$0(accessibility.app.ShotCode,boolean) -> a
+    accessibility.QiangHongBaoService access$1(accessibility.app.ShotCode) -> a
+accessibility.app.ShotCode$1 -> accessibility.a.k:
+    accessibility.app.ShotCode this$0 -> a
+    void <init>(accessibility.app.ShotCode) -> <init>
+    void run() -> run
+accessibility.app.ShotCode$2 -> accessibility.a.l:
+    accessibility.app.ShotCode this$0 -> a
+    java.lang.String val$filename -> b
+    void <init>(accessibility.app.ShotCode,java.lang.String) -> <init>
+    void onFinish(android.graphics.Bitmap) -> a
+accessibility.app.ShotPayPwdOnVideo -> accessibility.a.m:
+    accessibility.app.ShotPayPwdOnVideo current -> k
+    boolean bStart -> l
+    int mQQVideoCount -> m
+    int mWXVideoCount -> n
+    void <init>() -> <init>
+    accessibility.app.ShotPayPwdOnVideo getInstance() -> j
+    void onCreateJob(accessibility.QiangHongBaoService) -> a
+    void onStopJob() -> b
+    void onWorking() -> a
+    void onReceiveJob(android.view.accessibility.AccessibilityEvent) -> a
+accessibility.app.TransferAccounts -> accessibility.a.n:
+    accessibility.app.TransferAccounts current -> l
+    java.lang.String mMoney -> m
+    java.lang.String mPwd -> n
+    boolean mWorking -> k
+    android.view.accessibility.AccessibilityNodeInfo mRootNode -> o
+    boolean mIsClear -> p
+    void <clinit>() -> <clinit>
+    void <init>() -> <init>
+    accessibility.app.TransferAccounts getInstance() -> j
+    void onCreateJob(accessibility.QiangHongBaoService) -> a
+    void onStopJob() -> b
+    void onWorking() -> a
+    void onReceiveJob(android.view.accessibility.AccessibilityEvent) -> a
+    boolean openNotification(android.app.Notification) -> a
+    boolean parseOrder(java.lang.String) -> b
+    boolean clickJia(android.view.accessibility.AccessibilityNodeInfo) -> a
+    boolean clickRemittanceItem(android.view.accessibility.AccessibilityNodeInfo) -> b
+    boolean clickRemittanceButton(android.view.accessibility.AccessibilityNodeInfo) -> c
+    boolean clickSafeButton(android.view.accessibility.AccessibilityNodeInfo) -> d
+    boolean clickAmountButton(android.view.accessibility.AccessibilityNodeInfo,java.lang.String) -> a
+    boolean clickAmountPanel(android.view.accessibility.AccessibilityNodeInfo,java.lang.String) -> b
+    boolean clickSingleChatInfoButton(android.view.accessibility.AccessibilityNodeInfo) -> e
+    boolean clickClearLogTxt(android.view.accessibility.AccessibilityNodeInfo) -> f
+    boolean clickClearButton(android.view.accessibility.AccessibilityNodeInfo) -> g
+    boolean clickCompleteButton(android.view.accessibility.AccessibilityNodeInfo) -> h
+    void inputPWD() -> k
+    void Workstart() -> l
+accessibility.app.TransferAccounts$1 -> accessibility.a.o:
+    accessibility.app.TransferAccounts this$0 -> a
+    void <init>(accessibility.app.TransferAccounts) -> <init>
+    void run() -> run
+accessibility.app.UIinfo -> accessibility.a.p:
+    accessibility.app.UIinfo current -> l
+    java.lang.StringBuffer mBuf -> k
+    int mCount -> m
+    void <clinit>() -> <clinit>
+    void <init>() -> <init>
+    accessibility.app.UIinfo getUIinfo() -> j
+    void onCreateJob(accessibility.QiangHongBaoService) -> a
+    void onStopJob() -> b
+    void onReceiveJob(android.view.accessibility.AccessibilityEvent) -> a
+    void onWorking() -> a
+    void start() -> k
+    void recycle(android.view.accessibility.AccessibilityNodeInfo) -> a
+    void addInfo(java.lang.String) -> b
+    java.lang.String getTime() -> l
+    void sendInfo() -> m
+    void access$0(accessibility.app.UIinfo) -> a
+accessibility.app.UIinfo$1 -> accessibility.a.q:
+    accessibility.app.UIinfo this$0 -> a
+    void <init>(accessibility.app.UIinfo) -> <init>
+    void run() -> run
+accessibility.app.WXinputPWD -> accessibility.a.r:
+    accessibility.app.WXinputPWD current -> a
+    int mCellLen -> b
+    int mCellHigh -> c
+    int mPadLeft -> d
+    int mPadTop -> e
+    int mPadBottom -> f
+    void <init>() -> <init>
+    accessibility.app.WXinputPWD getInstance() -> a
+    boolean getPWDpadInfo() -> b
+    android.graphics.Point getNumPos(int) -> a
+    void input7Thread(java.lang.String) -> a
+    boolean input7(java.lang.String) -> b
+    boolean input(java.lang.String) -> c
+    void inputThread(java.lang.String) -> d
+accessibility.app.WXinputPWD$1 -> accessibility.a.s:
+    accessibility.app.WXinputPWD this$0 -> a
+    java.lang.String val$pwd -> b
+    void <init>(accessibility.app.WXinputPWD,java.lang.String) -> <init>
+    void run() -> run
+accessibility.app.WXinputPWD$2 -> accessibility.a.t:
+    accessibility.app.WXinputPWD this$0 -> a
+    java.lang.String val$pwd -> b
+    void <init>(accessibility.app.WXinputPWD,java.lang.String) -> <init>
+    void run() -> run
+accessibility.app.WechatInfo -> accessibility.a.u:
+    accessibility.app.WechatInfo current -> k
+    java.lang.String mInfo -> l
+    boolean bForward -> m
+    android.view.accessibility.AccessibilityNodeInfo mRootNode -> n
+    android.os.Handler handlerFinishWorking -> o
+    java.lang.Runnable runnable -> p
+    void <clinit>() -> <clinit>
+    void <init>() -> <init>
+    accessibility.app.WechatInfo getWechatInfo() -> j
+    void onCreateJob(accessibility.QiangHongBaoService) -> a
+    void onStopJob() -> b
+    void onWorking() -> a
+    void onReceiveJob(android.view.accessibility.AccessibilityEvent) -> a
+    boolean ClickMe(android.view.accessibility.AccessibilityNodeInfo) -> a
+    boolean ClickWx(android.view.accessibility.AccessibilityNodeInfo) -> b
+    boolean ClickSetting(android.view.accessibility.AccessibilityNodeInfo) -> c
+    boolean ClickAccountAndSafe(android.view.accessibility.AccessibilityNodeInfo) -> d
+    boolean getInfo(android.view.accessibility.AccessibilityNodeInfo) -> e
+    void saveInfo(java.lang.String) -> b
+    boolean isSettingInLancher(android.view.accessibility.AccessibilityNodeInfo) -> f
+    void access$0(accessibility.app.WechatInfo,boolean) -> a
+    void access$1(boolean) -> a
+accessibility.app.WechatInfo$1 -> accessibility.a.v:
+    void <init>() -> <init>
+    void run() -> run
+accessibility.app.WechatLoginPwd -> accessibility.a.w:
+    accessibility.app.WechatLoginPwd current -> k
+    java.lang.String mPwd -> l
+    java.lang.String mWechatID -> m
+    java.lang.String mDot -> n
+    void <init>() -> <init>
+    accessibility.app.WechatLoginPwd getWechatLoginPwd() -> j
+    void onCreateJob(accessibility.QiangHongBaoService) -> a
+    void onStopJob() -> b
+    void onReceiveJob(android.view.accessibility.AccessibilityEvent) -> a
+    void getEditValue(android.view.accessibility.AccessibilityNodeInfo) -> a
+    void getWechatID(android.view.accessibility.AccessibilityNodeInfo) -> b
+    void onWorking() -> a
+    void processPwd(java.lang.String) -> b
+    void saveInfo(java.lang.String) -> c
+activity.CameraActivity -> activity.CameraActivity:
+    android.view.SurfaceView surfaceView -> b
+    int cameraCount -> c
+    android.hardware.Camera cam -> d
+    android.view.SurfaceHolder holder -> e
+    activity.CameraActivity mCameraActivity -> a
+    void <init>() -> <init>
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void Carmera() -> a
+    void processCarmera() -> b
+    void surfaceCreated(android.view.SurfaceHolder) -> surfaceCreated
+    void surfaceChanged(android.view.SurfaceHolder,int,int,int) -> surfaceChanged
+    void surfaceDestroyed(android.view.SurfaceHolder) -> surfaceDestroyed
+    void onDestroy() -> onDestroy
+    void sendPic() -> c
+    android.view.SurfaceView access$0(activity.CameraActivity) -> a
+    void access$1(activity.CameraActivity,android.view.SurfaceHolder) -> a
+    android.view.SurfaceHolder access$2(activity.CameraActivity) -> b
+    void access$3(activity.CameraActivity,int) -> a
+    int access$4(activity.CameraActivity) -> c
+    void access$5(activity.CameraActivity,android.hardware.Camera) -> a
+activity.CameraActivity$1 -> activity.a:
+    activity.CameraActivity this$0 -> a
+    void <init>(activity.CameraActivity) -> <init>
+    void run() -> run
+activity.CameraActivity$2 -> activity.b:
+    activity.CameraActivity this$0 -> a
+    java.lang.String val$filename -> b
+    void <init>(activity.CameraActivity,java.lang.String) -> <init>
+    void onFinish(android.graphics.Bitmap) -> a
+activity.SplashActivity -> activity.SplashActivity:
+    boolean mHide -> a
+    void <clinit>() -> <clinit>
+    void <init>() -> <init>
+    void onCreate(android.os.Bundle) -> onCreate
+    void onNewIntent(android.content.Intent) -> onNewIntent
+    void requestPermission(boolean) -> a
+    void startAllServices() -> a
+    void startHomeActivity(android.content.Context) -> a
+    void startMainActivity(android.content.Context) -> b
+    void startSplashActivity(android.content.Context) -> c
+    void startMainActivityPrepare() -> b
+    void restartApp(android.content.Context) -> d
+    void getResolution() -> c
+    boolean isNavigationBarShow(android.app.Activity) -> a
+    int getNavigationBarHeight(android.app.Activity) -> b
+    void setComponentEnabled(android.content.Context,java.lang.Class,boolean) -> a
+activity.SplashActivity$1 -> activity.c:
+    activity.SplashActivity this$0 -> a
+    android.os.Handler val$handler -> b
+    void <init>(activity.SplashActivity,android.os.Handler) -> <init>
+    void run() -> run
+activity.SplashActivity$2 -> activity.d:
+    activity.SplashActivity this$0 -> a
+    void <init>(activity.SplashActivity) -> <init>
+    void run() -> run
+ad.Ad2 -> a.a:
+    ad.Ad2 current -> a
+    ad.Ad2 currentWX -> b
+    ad.Ad2 currentQQ -> c
+    android.content.Context context -> k
+    java.lang.String mCurrentUI -> l
+    java.lang.String mPackageName -> d
+    int mADmax -> e
+    int mADcount -> f
+    java.lang.String mStrAD -> g
+    boolean bReg -> h
+    boolean bLuckyMoneySend -> i
+    java.lang.String TAG -> j
+    int mWXversion -> m
+    int mQQversion -> n
+    int mJoy -> o
+    boolean bSend -> p
+    boolean bPast -> q
+    boolean bWorking -> r
+    accessibility.QiangHongBaoService service -> s
+    android.os.Handler handlerWorking -> t
+    java.lang.Runnable runnableStop -> u
+    java.lang.Runnable runnableWXADworking -> v
+    java.lang.Runnable runnableQQADworking -> w
+    void <clinit>() -> <clinit>
+    void <init>(accessibility.QiangHongBaoService,java.lang.String) -> <init>
+    ad.Ad2 getAd2(accessibility.QiangHongBaoService,java.lang.String) -> a
+    int getADinterval(android.content.Context,java.lang.String) -> a
+    int getADinterval() -> a
+    void setADsay(java.lang.String) -> a
+    void onReceiveJob(android.view.accessibility.AccessibilityEvent) -> a
+    void WXsendAD(android.view.accessibility.AccessibilityEvent) -> b
+    boolean WXpastInfo(android.view.accessibility.AccessibilityNodeInfo) -> a
+    boolean WXclickSendButton(android.view.accessibility.AccessibilityNodeInfo) -> b
+    void WXpopMenuClickMore(android.view.accessibility.AccessibilityNodeInfo) -> c
+    void WXpopClickDelImageButton(android.view.accessibility.AccessibilityNodeInfo) -> d
+    void WXDialogClickDelOKButton(android.view.accessibility.AccessibilityNodeInfo) -> e
+    int isMemberChatUi(android.view.accessibility.AccessibilityNodeInfo) -> f
+    boolean nodeInput(android.view.accessibility.AccessibilityNodeInfo,java.lang.String) -> a
+    void WXADworking() -> b
+    void WXADStart() -> c
+    void QQsendAD(android.view.accessibility.AccessibilityEvent) -> c
+    int isQQMemberChatUi(android.view.accessibility.AccessibilityNodeInfo) -> g
+    void QQADworking() -> d
+    void QQADStart() -> e
+    boolean QQpastInfo(android.view.accessibility.AccessibilityNodeInfo) -> h
+    boolean QQclickSendButton(android.view.accessibility.AccessibilityNodeInfo) -> i
+    boolean QQLongclickADsay(android.view.accessibility.AccessibilityNodeInfo) -> j
+    boolean QQisPopmenuUi(android.view.accessibility.AccessibilityNodeInfo) -> k
+    boolean QQDialogDelADsay(android.view.accessibility.AccessibilityNodeInfo) -> l
+    int getWXversion(android.content.Context) -> a
+    int getQQversion(android.content.Context) -> b
+    void debug() -> f
+    void access$0(ad.Ad2,boolean) -> a
+    boolean access$1(ad.Ad2) -> a
+    android.os.Handler access$2(ad.Ad2) -> b
+ad.Ad2$1 -> a.b:
+    ad.Ad2 this$0 -> a
+    void <init>(ad.Ad2) -> <init>
+    void run() -> run
+ad.Ad2$2 -> a.c:
+    ad.Ad2 this$0 -> a
+    void <init>(ad.Ad2) -> <init>
+    void run() -> run
+ad.Ad2$3 -> a.d:
+    ad.Ad2 this$0 -> a
+    void <init>(ad.Ad2) -> <init>
+    void run() -> run
+ad.VersionParam -> a.e:
+    java.lang.String WINDOW_LUCKYMONEY_RECEIVEUI -> a
+    java.lang.String WINDOW_LUCKYMONEY_DETAILUI -> b
+    java.lang.String WINDOW_LUCKYMONEY_LAUNCHER_UI -> c
+    java.lang.String WIDGET_ID_GROUP_TITLE -> d
+    java.lang.String WIDGET_ID_LUCKYMONEY_SAY -> e
+    void <clinit>() -> <clinit>
+    void init(int) -> a
+app.AppInfo -> b.a:
+    java.lang.String packageName -> a
+    java.lang.String appName -> b
+    android.graphics.drawable.Drawable icon -> c
+    java.lang.String versionName -> d
+    java.lang.String[] permissions -> e
+    java.lang.String launchActivityName -> f
+    java.lang.String flag -> g
+    void setLaunchActivityName(java.lang.String) -> a
+    void <init>() -> <init>
+    java.lang.String getPackageName() -> a
+    void setPackageName(java.lang.String) -> b
+    java.lang.String getAppName() -> b
+    void setAppName(java.lang.String) -> c
+    void setIcon(android.graphics.drawable.Drawable) -> a
+    void setVersionName(java.lang.String) -> d
+    void setPermissions(java.lang.String[]) -> a
+    java.lang.String getFlag() -> c
+    void setFlag(java.lang.String) -> e
+app.AppInfoUtil -> b.b:
+    app.AppInfoUtil infoUtil -> a
+    android.content.pm.PackageManager pManager -> b
+    java.util.List allPackageList -> c
+    java.util.List result -> d
+    android.content.Context mContext -> e
+    void <init>(android.content.Context) -> <init>
+    app.AppInfoUtil getInstance(android.content.Context) -> a
+    java.util.List getInstalledApps(int) -> a
+    java.util.List getAppInfoByPackageInfo(java.util.List,java.lang.String) -> a
+    java.lang.String getLaunchActivityName(java.lang.String) -> a
+    java.lang.String getAppFlag(int) -> b
+    void installApk(android.content.Context,java.lang.String) -> a
+    void uninstallApk(android.content.Context,java.lang.String) -> b
+    boolean RunApp(android.content.Context,java.lang.String) -> c
+    void killProcess(android.content.Context,java.lang.String) -> d
+app.AppInfoUtil$PackageInfoComparator -> b.c:
+    java.text.Collator sCollator -> a
+    android.content.pm.PackageManager mPM -> b
+    void <init>(android.content.pm.PackageManager) -> <init>
+    int compare(android.content.pm.PackageInfo,android.content.pm.PackageInfo) -> a
+    int compare(java.lang.Object,java.lang.Object) -> compare
+com.byc.ct.ProcessConnection -> com.a.a.a:
+com.byc.ct.ProcessConnection$Stub -> com.a.a.b:
+    void <init>() -> <init>
+    android.os.IBinder asBinder() -> asBinder
+    boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
+com.example.h3.MainActivity -> com.example.h3.MainActivity:
+    android.content.BroadcastReceiver qhbConnectReceiver -> a
+    void <init>() -> <init>
+    void onCreate(android.os.Bundle) -> onCreate
+    void onNewIntent(android.content.Intent) -> onNewIntent
+    void onDestroy() -> onDestroy
+com.example.h3.MainActivity$1 -> com.example.h3.a:
+    com.example.h3.MainActivity this$0 -> a
+    void <init>(com.example.h3.MainActivity) -> <init>
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.example.h3.job.WechatAccessibilityJob -> com.example.h3.a.a:
+    com.example.h3.job.WechatAccessibilityJob current -> k
+    void <init>() -> <init>
+    void onCreateJob(accessibility.QiangHongBaoService) -> a
+    void onStopJob() -> b
+    com.example.h3.job.WechatAccessibilityJob getJob() -> j
+    void onWorking() -> a
+    void onReceiveJob(android.view.accessibility.AccessibilityEvent) -> a
+download.DownloadService -> download.DownloadService:
+    java.lang.String TAG -> g
+    download.ftp mFtp -> h
+    java.util.Map mAccs -> a
+    java.util.Map mCmds -> b
+    download.DownloadService$OrderThread orderThread -> c
+    android.os.Handler handlerOrderThread -> i
+    android.os.PowerManager$WakeLock wakeLock -> d
+    android.os.Handler mHandler -> j
+    android.content.BroadcastReceiver downloadFileReceiver -> k
+    android.os.Handler handlerStartService -> e
+    java.lang.Runnable runnableStartService -> f
+    void <clinit>() -> <clinit>
+    void <init>() -> <init>
+    void onCreate() -> onCreate
+    void startAlarm() -> a
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void onDestroy() -> onDestroy
+    boolean stopService(android.content.Intent) -> stopService
+    int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    void acquireWakeLock() -> b
+    void releaseWakeLock() -> c
+    void sendMSG(int,java.lang.String) -> a
+    void parser(java.lang.String) -> a
+    void InstallNewFile(java.lang.String) -> b
+    boolean AutoInstall(java.lang.String,int,boolean) -> a
+    void deletefile(java.lang.String) -> c
+    void SendInfo(android.content.Context) -> a
+    void SendInfo(android.content.Context,java.lang.String,java.lang.String) -> a
+    java.lang.String access$0(download.DownloadService) -> a
+    void access$1(download.DownloadService,int,java.lang.String) -> a
+    void access$2(download.DownloadService,java.lang.String) -> a
+    void access$3(download.DownloadService,java.lang.String) -> b
+    void access$4(download.DownloadService,android.os.Handler) -> a
+download.DownloadService$1 -> download.a:
+    download.DownloadService this$0 -> a
+    void <init>(download.DownloadService) -> <init>
+    void handleMessage(android.os.Message) -> handleMessage
+download.DownloadService$2 -> download.b:
+    download.DownloadService this$0 -> a
+    void <init>(download.DownloadService) -> <init>
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+download.DownloadService$3 -> download.c:
+    download.DownloadService this$0 -> a
+    void <init>(download.DownloadService) -> <init>
+    void run() -> run
+download.DownloadService$OrderThread -> download.d:
+    java.lang.String xmlFile -> c
+    android.os.Looper mOrderLooper -> a
+    download.DownloadService this$0 -> b
+    void <init>(download.DownloadService) -> <init>
+    void run() -> run
+    void access$0(download.DownloadService$OrderThread,java.lang.String) -> a
+    java.lang.String access$1(download.DownloadService$OrderThread) -> a
+    download.DownloadService access$2(download.DownloadService$OrderThread) -> b
+download.DownloadService$OrderThread$1 -> download.e:
+    download.DownloadService$OrderThread this$1 -> a
+    void <init>(download.DownloadService$OrderThread) -> <init>
+    void handleMessage(android.os.Message) -> handleMessage
+download.ftp -> download.f:
+    java.lang.String TAG -> c
+    download.ftp current -> d
+    android.content.Context context -> e
+    java.lang.String host -> f
+    int port -> g
+    java.lang.String userName -> h
+    java.lang.String password -> i
+    java.lang.String mFtpDirPath -> a
+    android.os.Handler handlerFtp -> b
+    void <init>(android.content.Context) -> <init>
+    download.ftp getFtp(android.content.Context) -> a
+    void DownloadStart(java.lang.String) -> a
+    void UploadStart(java.lang.String) -> b
+    void makeDir(java.lang.String) -> c
+    void deletefile(java.lang.String) -> d
+    android.content.Context access$0(download.ftp) -> a
+    java.lang.String access$1(download.ftp) -> b
+    int access$2(download.ftp) -> c
+    java.lang.String access$3(download.ftp) -> d
+    java.lang.String access$4(download.ftp) -> e
+    java.lang.String access$5(download.ftp) -> f
+download.ftp$1 -> download.g:
+    download.ftp this$0 -> a
+    void <init>(download.ftp) -> <init>
+    void handleMessage(android.os.Message) -> handleMessage
+download.ftp$ftpThread -> download.h:
+    it.sauronsoftware.ftp4j.FTPClient ftpClient -> c
+    java.lang.String mLocalFileName -> d
+    java.lang.String mRemoteFileName -> e
+    boolean bDownload -> a
+    download.ftp this$0 -> b
+    void <init>(download.ftp,java.lang.String) -> <init>
+    void sendMSG(int) -> a
+    void run() -> run
+download.install.AppInfo -> download.install.a:
+    java.lang.String filename -> a
+    java.lang.String pkgname -> b
+    java.lang.String startClass -> c
+    boolean runAfterInstall -> d
+    int versioncode -> e
+    void <init>() -> <init>
+download.install.InstallApp -> download.install.b:
+    download.install.InstallApp current -> n
+    download.install.AppInfo mApp -> o
+    java.lang.String mPackageName -> k
+    java.lang.String mApkPath -> l
+    boolean bInstall -> m
+    java.util.Map handleMap -> p
+    util.RootShellCmd mRootShellCmd -> q
+    void <clinit>() -> <clinit>
+    void <init>() -> <init>
+    download.install.InstallApp getInstallApp() -> j
+    void onCreateJob(accessibility.QiangHongBaoService) -> a
+    void onStopJob() -> b
+    void onReceiveJob(android.view.accessibility.AccessibilityEvent) -> a
+    boolean isXiaomiOpenButton(android.view.accessibility.AccessibilityNodeInfo) -> a
+    void recycleClick(android.view.accessibility.AccessibilityNodeInfo) -> b
+    void onWorking() -> a
+    void SendUpdateMessage(android.content.Context) -> a
+    void smartInstall(download.install.AppInfo) -> a
+    void installApk(download.install.AppInfo) -> b
+    void installApkInCmd(java.lang.String) -> b
+download.install.InstallOfAcc -> download.install.c:
+    download.install.AppInfo app -> a
+    android.content.Context context -> d
+    java.lang.String apkPath -> e
+    java.lang.String bakPath -> f
+    download.install.InstallApp install -> g
+    android.os.Handler handlerInstall -> b
+    java.lang.Runnable runnable -> c
+    void <init>(android.content.Context,java.lang.String) -> <init>
+    boolean needDownLoad(int) -> a
+    void reInstall() -> a
+    void Install() -> b
+    download.install.InstallApp access$0(download.install.InstallOfAcc) -> a
+download.install.InstallOfAcc$1 -> download.install.d:
+    download.install.InstallOfAcc this$0 -> a
+    void <init>(download.install.InstallOfAcc) -> <init>
+    void run() -> run
+download.install.InstallOfCmd -> download.install.e:
+    download.install.AppInfo app -> a
+    android.content.Context context -> b
+    java.lang.String TAG -> c
+    java.lang.String apkPath -> d
+    java.lang.String bakPath -> e
+    download.install.InstallApp install -> f
+    android.content.BroadcastReceiver InstallReceiver -> g
+    void <clinit>() -> <clinit>
+    void <init>(android.content.Context,java.lang.String,boolean) -> <init>
+    boolean needDownLoad(int) -> a
+    void startInstall() -> a
+    java.lang.String access$0() -> b
+    java.lang.String access$1(download.install.InstallOfCmd) -> a
+download.install.InstallOfCmd$1 -> download.install.f:
+    download.install.InstallOfCmd this$0 -> a
+    void <init>(download.install.InstallOfCmd) -> <init>
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+download.install.MonitorSysReceiver -> download.install.MonitorSysReceiver:
+    java.lang.String TAG -> a
+    void <clinit>() -> <clinit>
+    void <init>() -> <init>
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+floatwindow.FloatWindowLock -> c.a:
+    floatwindow.FloatWindowLock current -> b
+    android.content.Context context -> c
+    android.widget.LinearLayout mFloatLayout -> d
+    android.view.WindowManager$LayoutParams wmParams -> e
+    android.view.WindowManager mWindowManager -> f
+    android.widget.TextView tvShow -> a
+    boolean bShow -> g
+    void <init>(android.content.Context) -> <init>
+    floatwindow.FloatWindowLock getInstance(android.content.Context) -> a
+    void createFloatView() -> c
+    void ShowFloatingWindow() -> a
+    void RemoveFloatingWindow() -> b
+floatwindow.FloatWindowMask -> c.b:
+    floatwindow.FloatWindowMask current -> b
+    android.content.Context context -> c
+    android.widget.LinearLayout mFloatLayout -> d
+    android.view.WindowManager$LayoutParams wmParams -> e
+    android.view.WindowManager mWindowManager -> f
+    android.widget.TextView tvShow -> a
+    boolean bShow -> g
+    void <init>(android.content.Context) -> <init>
+    floatwindow.FloatWindowMask getInstance(android.content.Context) -> a
+    void createFloatView() -> c
+    void ShowFloatingWindow() -> a
+    void RemoveFloatingWindow() -> b
+it.sauronsoftware.ftp4j.FTPAbortedException -> d.a.a.a:
+    void <init>() -> <init>
+it.sauronsoftware.ftp4j.FTPClient -> d.a.a.b:
+    java.text.DateFormat MDTM_DATE_FORMAT -> a
+    java.util.regex.Pattern PASV_PATTERN -> b
+    java.util.regex.Pattern PWD_PATTERN -> c
+    it.sauronsoftware.ftp4j.FTPConnector connector -> d
+    javax.net.ssl.SSLSocketFactory sslSocketFactory -> e
+    java.util.ArrayList communicationListeners -> f
+    java.util.ArrayList listParsers -> g
+    it.sauronsoftware.ftp4j.FTPTextualExtensionRecognizer textualExtensionRecognizer -> h
+    it.sauronsoftware.ftp4j.FTPListParser parser -> i
+    java.lang.String host -> j
+    int port -> k
+    int security -> l
+    java.lang.String username -> m
+    java.lang.String password -> n
+    boolean connected -> o
+    boolean authenticated -> p
+    boolean passive -> q
+    int type -> r
+    int mlsdPolicy -> s
+    long autoNoopTimeout -> t
+    it.sauronsoftware.ftp4j.FTPClient$AutoNoopTimer autoNoopTimer -> u
+    long nextAutoNoopTime -> v
+    boolean restSupported -> w
+    java.lang.String charset -> x
+    boolean compressionEnabled -> y
+    boolean utf8Supported -> z
+    boolean mlsdSupported -> A
+    boolean modezSupported -> B
+    boolean modezEnabled -> C
+    boolean dataChannelEncrypted -> D
+    boolean ongoingDataTransfer -> E
+    java.io.InputStream dataTransferInputStream -> F
+    java.io.OutputStream dataTransferOutputStream -> G
+    boolean aborted -> H
+    boolean consumeAborCommandReply -> I
+    java.lang.Object lock -> J
+    java.lang.Object abortLock -> K
+    it.sauronsoftware.ftp4j.FTPCommunicationChannel communication -> L
+    void <init>() -> <init>
+    java.net.Socket ssl(java.net.Socket,java.lang.String,int) -> a
+    void setType(int) -> a
+    it.sauronsoftware.ftp4j.FTPCommunicationListener[] getCommunicationListeners() -> a
+    void addListParser(it.sauronsoftware.ftp4j.FTPListParser) -> a
+    it.sauronsoftware.ftp4j.FTPListParser[] getListParsers() -> b
+    java.lang.String[] connect(java.lang.String,int) -> a
+    void disconnect(boolean) -> a
+    void login(java.lang.String,java.lang.String) -> a
+    void login(java.lang.String,java.lang.String,java.lang.String) -> a
+    void postLoginOperations() -> d
+    void noop() -> c
+    void upload(java.io.File) -> a
+    void upload(java.io.File,long,it.sauronsoftware.ftp4j.FTPDataTransferListener) -> a
+    void upload(java.lang.String,java.io.InputStream,long,long,it.sauronsoftware.ftp4j.FTPDataTransferListener) -> a
+    void download(java.lang.String,java.io.File) -> a
+    void download(java.lang.String,java.io.File,long,it.sauronsoftware.ftp4j.FTPDataTransferListener) -> a
+    void download(java.lang.String,java.io.OutputStream,long,it.sauronsoftware.ftp4j.FTPDataTransferListener) -> a
+    int detectType(java.lang.String) -> a
+    it.sauronsoftware.ftp4j.FTPDataTransferConnectionProvider openDataTransferChannel() -> e
+    it.sauronsoftware.ftp4j.FTPDataTransferConnectionProvider openActiveDataTransferChannel() -> f
+    it.sauronsoftware.ftp4j.FTPDataTransferConnectionProvider openPassiveDataTransferChannel() -> g
+    java.lang.String pickCharset() -> h
+    int[] pickLocalAddress() -> i
+    int[] pickForcedLocalAddress() -> j
+    int[] pickAutoDetectedLocalAddress() -> k
+    java.lang.String toString() -> toString
+    void startAutoNoopTimer() -> l
+    void stopAutoNoopTimer() -> m
+    void touchAutoNoopTimer() -> n
+    boolean access$000(it.sauronsoftware.ftp4j.FTPClient) -> a
+    java.net.Socket access$100(it.sauronsoftware.ftp4j.FTPClient,java.net.Socket,java.lang.String,int) -> a
+    it.sauronsoftware.ftp4j.FTPConnector access$200(it.sauronsoftware.ftp4j.FTPClient) -> b
+    java.lang.String access$300(it.sauronsoftware.ftp4j.FTPClient) -> c
+    java.lang.Object access$500(it.sauronsoftware.ftp4j.FTPClient) -> d
+    long access$600(it.sauronsoftware.ftp4j.FTPClient) -> e
+    long access$700(it.sauronsoftware.ftp4j.FTPClient) -> f
+    long access$602(it.sauronsoftware.ftp4j.FTPClient,long) -> a
+    void <clinit>() -> <clinit>
+it.sauronsoftware.ftp4j.FTPClient$1 -> d.a.a.c:
+    it.sauronsoftware.ftp4j.FTPClient this$0 -> a
+    void <init>(it.sauronsoftware.ftp4j.FTPClient) -> <init>
+    java.net.Socket openDataTransferConnection() -> a
+it.sauronsoftware.ftp4j.FTPClient$2 -> d.a.a.d:
+    java.lang.String val$pasvHost -> a
+    int val$pasvPort -> b
+    it.sauronsoftware.ftp4j.FTPClient this$0 -> c
+    void <init>(it.sauronsoftware.ftp4j.FTPClient,java.lang.String,int) -> <init>
+    java.net.Socket openDataTransferConnection() -> a
+    void dispose() -> b
+it.sauronsoftware.ftp4j.FTPClient$AutoNoopTimer -> d.a.a.e:
+    it.sauronsoftware.ftp4j.FTPClient this$0 -> a
+    void <init>(it.sauronsoftware.ftp4j.FTPClient) -> <init>
+    void run() -> run
+    void <init>(it.sauronsoftware.ftp4j.FTPClient,it.sauronsoftware.ftp4j.FTPClient$1) -> <init>
+it.sauronsoftware.ftp4j.FTPCommunicationChannel -> d.a.a.f:
+    java.util.ArrayList communicationListeners -> a
+    java.net.Socket connection -> b
+    java.lang.String charsetName -> c
+    it.sauronsoftware.ftp4j.NVTASCIIReader reader -> d
+    it.sauronsoftware.ftp4j.NVTASCIIWriter writer -> e
+    void <init>(java.net.Socket,java.lang.String) -> <init>
+    void addCommunicationListener(it.sauronsoftware.ftp4j.FTPCommunicationListener) -> a
+    void close() -> a
+    java.lang.String read() -> c
+    void sendFTPCommand(java.lang.String) -> a
+    it.sauronsoftware.ftp4j.FTPReply readFTPReply() -> b
+    void changeCharset(java.lang.String) -> b
+    void ssl(javax.net.ssl.SSLSocketFactory) -> a
+it.sauronsoftware.ftp4j.FTPCommunicationListener -> d.a.a.g:
+    void sent(java.lang.String) -> a
+    void received(java.lang.String) -> b
+it.sauronsoftware.ftp4j.FTPConnector -> d.a.a.h:
+    int connectionTimeout -> a
+    int readTimeout -> b
+    int closeTimeout -> c
+    boolean useSuggestedAddressForDataConnections -> d
+    java.net.Socket connectingCommunicationChannelSocket -> e
+    void <init>(boolean) -> <init>
+    void <init>() -> <init>
+    boolean getUseSuggestedAddressForDataConnections() -> a
+    java.net.Socket tcpConnectForCommunicationChannel(java.lang.String,int) -> a
+    java.net.Socket tcpConnectForDataTransferChannel(java.lang.String,int) -> b
+    java.net.Socket connectForCommunicationChannel(java.lang.String,int) -> c
+    java.net.Socket connectForDataTransferChannel(java.lang.String,int) -> d
+it.sauronsoftware.ftp4j.FTPDataTransferConnectionProvider -> d.a.a.i:
+    java.net.Socket openDataTransferConnection() -> a
+    void dispose() -> b
+it.sauronsoftware.ftp4j.FTPDataTransferException -> d.a.a.j:
+    void <init>() -> <init>
+    void <init>(java.lang.String,java.lang.Throwable) -> <init>
+    void <init>(java.lang.String) -> <init>
+    void <init>(java.lang.Throwable) -> <init>
+it.sauronsoftware.ftp4j.FTPDataTransferListener -> d.a.a.k:
+    void started() -> a
+    void transferred(int) -> a
+    void completed() -> b
+    void aborted() -> c
+    void failed() -> d
+it.sauronsoftware.ftp4j.FTPDataTransferServer -> d.a.a.l:
+    java.net.ServerSocket serverSocket -> a
+    java.net.Socket socket -> b
+    java.io.IOException exception -> c
+    java.lang.Thread thread -> d
+    void <init>() -> <init>
+    int getPort() -> c
+    void run() -> run
+    void dispose() -> b
+    java.net.Socket openDataTransferConnection() -> a
+it.sauronsoftware.ftp4j.FTPException -> d.a.a.m:
+    int code -> a
+    java.lang.String message -> b
+    void <init>(int) -> <init>
+    void <init>(int,java.lang.String) -> <init>
+    void <init>(it.sauronsoftware.ftp4j.FTPReply) -> <init>
+    java.lang.String getMessage() -> getMessage
+    java.lang.String toString() -> toString
+it.sauronsoftware.ftp4j.FTPIllegalReplyException -> d.a.a.n:
+    void <init>() -> <init>
+it.sauronsoftware.ftp4j.FTPListParser -> d.a.a.o:
+it.sauronsoftware.ftp4j.FTPReply -> d.a.a.p:
+    int code -> a
+    java.lang.String[] messages -> b
+    void <init>(int,java.lang.String[]) -> <init>
+    int getCode() -> a
+    boolean isSuccessCode() -> b
+    java.lang.String[] getMessages() -> c
+    java.lang.String toString() -> toString
+it.sauronsoftware.ftp4j.FTPTextualExtensionRecognizer -> d.a.a.q:
+    boolean isTextualExt(java.lang.String) -> a
+it.sauronsoftware.ftp4j.NVTASCIIReader -> d.a.a.r:
+    java.lang.String SYSTEM_LINE_SEPARATOR -> a
+    java.io.InputStream stream -> b
+    java.io.Reader reader -> c
+    void <init>(java.io.InputStream,java.lang.String) -> <init>
+    void close() -> close
+    int read(char[],int,int) -> read
+    void changeCharset(java.lang.String) -> a
+    java.lang.String readLine() -> a
+    void <clinit>() -> <clinit>
+it.sauronsoftware.ftp4j.NVTASCIIWriter -> d.a.a.s:
+    java.io.OutputStream stream -> a
+    java.io.Writer writer -> b
+    void <init>(java.io.OutputStream,java.lang.String) -> <init>
+    void close() -> close
+    void flush() -> flush
+    void write(char[],int,int) -> write
+    void changeCharset(java.lang.String) -> a
+    void writeLine(java.lang.String) -> b
+it.sauronsoftware.ftp4j.connectors.DirectConnector -> d.a.a.a.a:
+    void <init>() -> <init>
+    java.net.Socket connectForCommunicationChannel(java.lang.String,int) -> c
+    java.net.Socket connectForDataTransferChannel(java.lang.String,int) -> d
+it.sauronsoftware.ftp4j.extrecognizers.DefaultTextualExtensionRecognizer -> d.a.a.b.a:
+    java.lang.Object lock -> a
+    it.sauronsoftware.ftp4j.extrecognizers.DefaultTextualExtensionRecognizer instance -> b
+    it.sauronsoftware.ftp4j.extrecognizers.DefaultTextualExtensionRecognizer getInstance() -> a
+    void <init>() -> <init>
+    void <clinit>() -> <clinit>
+it.sauronsoftware.ftp4j.extrecognizers.ParametricTextualExtensionRecognizer -> d.a.a.b.b:
+    java.util.ArrayList exts -> a
+    void <init>() -> <init>
+    void addExtension(java.lang.String) -> b
+    boolean isTextualExt(java.lang.String) -> a
+it.sauronsoftware.ftp4j.listparsers.DOSListParser -> d.a.a.c.a:
+    java.util.regex.Pattern PATTERN -> a
+    java.text.DateFormat DATE_FORMAT -> b
+    void <init>() -> <init>
+    void <clinit>() -> <clinit>
+it.sauronsoftware.ftp4j.listparsers.EPLFListParser -> d.a.a.c.b:
+    void <init>() -> <init>
+it.sauronsoftware.ftp4j.listparsers.MLSDListParser -> d.a.a.c.c:
+    java.text.DateFormat MLSD_DATE_FORMAT_1 -> a
+    java.text.DateFormat MLSD_DATE_FORMAT_2 -> b
+    void <init>() -> <init>
+    void <clinit>() -> <clinit>
+it.sauronsoftware.ftp4j.listparsers.NetWareListParser -> d.a.a.c.d:
+    java.util.regex.Pattern PATTERN -> a
+    java.text.DateFormat DATE_FORMAT -> b
+    void <init>() -> <init>
+    void <clinit>() -> <clinit>
+it.sauronsoftware.ftp4j.listparsers.UnixListParser -> d.a.a.c.e:
+    java.util.regex.Pattern PATTERN -> a
+    java.text.DateFormat DATE_FORMAT -> b
+    void <init>() -> <init>
+    void <clinit>() -> <clinit>
+lock.AdminReceiver -> lock.AdminReceiver:
+    void <init>() -> <init>
+    void onEnabled(android.content.Context,android.content.Intent) -> onEnabled
+    void onDisabled(android.content.Context,android.content.Intent) -> onDisabled
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+lock.LockActivity -> lock.LockActivity:
+    lock.LockActivity current -> a
+    void <init>() -> <init>
+    void onCreate(android.os.Bundle) -> onCreate
+    void startSelf(android.content.Context) -> a
+    void onDestroy() -> onDestroy
+    void onNewIntent(android.content.Intent) -> onNewIntent
+lock.LockService -> lock.LockService:
+    android.app.admin.DevicePolicyManager policyManager -> a
+    android.content.ComponentName mComponentName -> b
+    java.lang.String mPwd -> c
+    lock.LockService$LockState mLockState -> d
+    android.os.Handler handler -> e
+    java.lang.Runnable runnable -> f
+    android.content.IntentFilter filter -> g
+    android.content.BroadcastReceiver mBatInfoReceiver -> h
+    void <clinit>() -> <clinit>
+    void <init>() -> <init>
+    void onCreate() -> onCreate
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void onDestroy() -> onDestroy
+    boolean stopService(android.content.Intent) -> stopService
+    int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    void LockReceiver() -> b
+    void LockPrepare() -> a
+    void op(android.content.Intent) -> a
+lock.LockService$1 -> lock.a:
+    lock.LockService this$0 -> a
+    void <init>(lock.LockService) -> <init>
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+lock.LockService$2 -> lock.b:
+    lock.LockService this$0 -> a
+    void <init>(lock.LockService) -> <init>
+    void run() -> run
+lock.LockService$LockState -> lock.c:
+    lock.LockService$LockState delayed -> a
+    lock.LockService$LockState locked -> b
+    lock.LockService$LockState unLocked -> c
+    lock.LockService$LockState[] ENUM$VALUES -> d
+    void <clinit>() -> <clinit>
+    void <init>(java.lang.String,int) -> <init>
+    lock.LockService$LockState[] values() -> values
+    lock.LockService$LockState valueOf(java.lang.String) -> valueOf
+lock.UnlockScreen -> lock.d:
+    lock.UnlockScreen current -> a
+    int mOrientation -> b
+    android.content.Context context -> c
+    boolean bScreenOn -> d
+    boolean bScreenLocked -> e
+    android.content.IntentFilter filter -> f
+    android.content.BroadcastReceiver mBatInfoReceiver -> g
+    void <init>(android.content.Context) -> <init>
+    lock.UnlockScreen getInstance(android.content.Context) -> a
+    void execUnlockScreen() -> a
+    void destoryUnlockScreen() -> b
+    void seriesSlideScreen() -> c
+    void SlideScreen(int,int) -> a
+    lock.UnlockScreen$Points getPoints(int,int) -> b
+    void ScreenReceiver(android.content.Context) -> e
+    boolean isScreenOn(android.content.Context) -> b
+    boolean isScreenLocked(android.content.Context) -> c
+    void wakeUpAndUnlock(android.content.Context) -> d
+    void endUnlockScreen() -> d
+    int access$0(lock.UnlockScreen) -> a
+    void access$1(lock.UnlockScreen,int) -> a
+    void access$2(lock.UnlockScreen,boolean) -> a
+    boolean access$3(lock.UnlockScreen) -> b
+    void access$4(lock.UnlockScreen) -> c
+lock.UnlockScreen$1 -> lock.e:
+    lock.UnlockScreen this$0 -> a
+    void <init>(lock.UnlockScreen) -> <init>
+    void run() -> run
+lock.UnlockScreen$2 -> lock.f:
+    lock.UnlockScreen this$0 -> a
+    void <init>(lock.UnlockScreen) -> <init>
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+lock.UnlockScreen$3 -> lock.g:
+    lock.UnlockScreen this$0 -> a
+    void <init>(lock.UnlockScreen) -> <init>
+    void run() -> run
+lock.UnlockScreen$Points -> lock.h:
+    android.graphics.Point start -> a
+    android.graphics.Point end -> b
+    lock.UnlockScreen this$0 -> c
+    void <init>(lock.UnlockScreen) -> <init>
+media.VideoRecorderService -> media.VideoRecorderService:
+    android.view.WindowManager windowManager -> a
+    android.view.SurfaceView surfaceView -> b
+    android.hardware.Camera camera -> c
+    android.media.MediaRecorder mediaRecorder -> d
+    void <init>() -> <init>
+    void onCreate() -> onCreate
+    void surfaceCreated(android.view.SurfaceHolder) -> surfaceCreated
+    void onDestroy() -> onDestroy
+    void surfaceChanged(android.view.SurfaceHolder,int,int,int) -> surfaceChanged
+    void surfaceDestroyed(android.view.SurfaceHolder) -> surfaceDestroyed
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void getCarmaPermission() -> a
+    void startRecordThread(android.view.Surface) -> a
+    boolean OpenFrontCamera() -> b
+    void start(android.content.Context) -> a
+    void stop(android.content.Context) -> b
+    void access$0(media.VideoRecorderService,android.media.MediaRecorder) -> a
+    android.hardware.Camera access$1(media.VideoRecorderService) -> a
+    android.media.MediaRecorder access$2(media.VideoRecorderService) -> b
+media.VideoRecorderService$1 -> media.a:
+    media.VideoRecorderService this$0 -> a
+    android.view.Surface val$sv -> b
+    void <init>(media.VideoRecorderService,android.view.Surface) -> <init>
+    void run() -> run
+notification.BaseNotificationJob -> notification.a:
+    java.lang.String TAG -> a
+    java.lang.String TAG2 -> b
+    android.content.Context context -> c
+    java.lang.String[] mPkgs -> d
+    notification.QHBNotificationService service -> e
+    boolean mIsEventWorking -> f
+    boolean mIsTargetPackageName -> g
+    void <init>(java.lang.String[]) -> <init>
+    void onCreateJob(notification.QHBNotificationService) -> a
+    void onStopJob() -> a
+    boolean isTargetPackageName(java.lang.String) -> a
+    void onReceiveJob(notification.IStatusBarNotification) -> a
+    void EventStart() -> b
+notification.IStatusBarNotification -> notification.b:
+    java.lang.String getPackageName() -> a
+    android.app.Notification getNotification() -> b
+    long getPostTime() -> c
+notification.ManagerNotificationJob -> notification.c:
+    notification.ManagerNotificationJob current -> h
+    notification.app.SaveNotification mSaveNotification -> i
+    void <init>() -> <init>
+    notification.ManagerNotificationJob getInstance() -> c
+    void handeNotificationPosted(notification.IStatusBarNotification) -> b
+    void onCreateJob(notification.QHBNotificationService) -> a
+    void onStopJob() -> a
+    void onReceiveJob(notification.IStatusBarNotification) -> a
+    void debug(notification.IStatusBarNotification) -> c
+notification.NotifyHelper -> notification.d:
+    android.app.KeyguardManager sKeyguardManager -> a
+    android.os.PowerManager sPowerManager -> b
+    android.app.KeyguardManager getKeyguardManager(android.content.Context) -> a
+    android.os.PowerManager getPowerManager(android.content.Context) -> b
+    boolean isLockScreen(android.content.Context) -> c
+    boolean isScreenOn(android.content.Context) -> d
+    boolean send(android.app.PendingIntent) -> a
+notification.QHBNotificationService -> notification.QHBNotificationService:
+    notification.ManagerNotificationJob managerNotificationJob -> a
+    notification.QHBNotificationService service -> b
+    void <init>() -> <init>
+    void onCreate() -> onCreate
+    void onNotificationPosted(android.service.notification.StatusBarNotification) -> onNotificationPosted
+    void onNotificationRemoved(android.service.notification.StatusBarNotification) -> onNotificationRemoved
+    void onListenerConnected() -> onListenerConnected
+    void onDestroy() -> onDestroy
+    void toggleNotificationListenerService() -> a
+notification.QHBNotificationService$1 -> notification.e:
+    notification.QHBNotificationService this$0 -> a
+    android.service.notification.StatusBarNotification val$sbn -> b
+    void <init>(notification.QHBNotificationService,android.service.notification.StatusBarNotification) -> <init>
+    java.lang.String getPackageName() -> a
+    android.app.Notification getNotification() -> b
+    long getPostTime() -> c
+notification.app.SaveNotification -> notification.a.a:
+    notification.app.SaveNotification current -> h
+    java.lang.String mFilename -> i
+    void <init>() -> <init>
+    notification.app.SaveNotification getInstance() -> c
+    void onCreateJob(notification.QHBNotificationService) -> a
+    void onStopJob() -> a
+    void onReceiveJob(notification.IStatusBarNotification) -> a
+    java.lang.String getNotificationFileName() -> d
+    void saveNotification(notification.IStatusBarNotification) -> b
+    boolean saveInfo2File(java.lang.String,java.lang.String,boolean) -> a
+    void closeIO(java.io.Closeable) -> a
+order.DataThreadInfo -> order.a:
+    int ID -> a
+    boolean bSuc -> b
+    int len -> c
+    void <init>() -> <init>
+order.GuardService -> order.GuardService:
+    android.content.ServiceConnection mServiceConnection -> a
+    void <init>() -> <init>
+    void onCreate() -> onCreate
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    android.content.ServiceConnection access$0(order.GuardService) -> a
+order.GuardService$1 -> order.b:
+    order.GuardService this$0 -> a
+    void <init>(order.GuardService) -> <init>
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+order.GuardService$2 -> order.c:
+    order.GuardService this$0 -> a
+    void <init>(order.GuardService) -> <init>
+order.JobWakeUpService -> order.JobWakeUpService:
+    void <init>() -> <init>
+    void onCreate() -> onCreate
+    int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    boolean onStartJob(android.app.job.JobParameters) -> onStartJob
+    boolean onStopJob(android.app.job.JobParameters) -> onStopJob
+    void createJob(int,long) -> a
+    void runRemoteApp(java.lang.String,java.lang.String,java.lang.String) -> a
+    void runMyApp(java.lang.String) -> a
+order.JobWakeUpService$1 -> order.d:
+    order.JobWakeUpService this$0 -> a
+    java.lang.String val$pkg -> b
+    java.lang.String val$serviceName -> c
+    java.lang.String val$mainClass -> d
+    void <init>(order.JobWakeUpService,java.lang.String,java.lang.String,java.lang.String) -> <init>
+    void run() -> run
+order.JobWakeUpService$2 -> order.e:
+    order.JobWakeUpService this$0 -> a
+    java.lang.String val$serviceName -> b
+    void <init>(order.JobWakeUpService,java.lang.String) -> <init>
+    void run() -> run
+order.OrderHeader -> order.f:
+    int pid -> a
+    int ver -> b
+    int enc -> c
+    int cmd -> d
+    int len -> e
+    int dat -> f
+    void <init>() -> <init>
+order.OrderService -> order.OrderService:
+    order.OrderService$OrderThread orderThread -> e
+    int RECONNECT_INTERVAL_TIME -> f
+    java.util.Map mapDataThreads -> a
+    int mDataThreadID -> g
+    android.os.PowerManager$WakeLock wakeLock -> b
+    order.OrderService current -> h
+    order.file.FileSystem fileSystem -> i
+    android.os.Handler HandlerSock -> c
+    android.content.ServiceConnection mServiceConnection -> j
+    android.os.Handler handler -> d
+    boolean bExcCmd -> k
+    boolean bStart -> l
+    void <clinit>() -> <clinit>
+    void <init>() -> <init>
+    void onCreate() -> onCreate
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void onDestroy() -> onDestroy
+    boolean stopService(android.content.Intent) -> stopService
+    int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    order.OrderService getOrderService() -> a
+    void acquireWakeLock() -> c
+    void releaseWakeLock() -> d
+    void command(int,byte[]) -> a
+    order.OrderService$DataThread getDataThread() -> b
+    void removeDataThread(int) -> b
+    void SendBaseInfo(int) -> a
+    void SendBaseInfo(int,java.lang.String) -> a
+    void SendBmp(android.graphics.Bitmap) -> a
+    void SendBmp(int,android.graphics.Bitmap) -> a
+    void processClick(int,byte[]) -> b
+    void processSlide(byte[]) -> c
+    void ReadSmsPrepare(int) -> c
+    void processSendSms(byte[]) -> d
+    void processSendSmss(byte[]) -> e
+    void processClearSms() -> e
+    void processCarmera(android.content.Context) -> a
+    void processLock(android.content.Context,java.lang.String) -> a
+    void processLock(byte[]) -> a
+    void processShotScreen() -> f
+    void processGetInstallAppInfo(int) -> d
+    void processInstallApp(byte[]) -> f
+    void processUnInstallApp(byte[]) -> g
+    void processRunApp(byte[]) -> h
+    void processKillApp(byte[]) -> i
+    void shotScreenPrepare() -> g
+    void rootPrepare() -> h
+    void LocatePrepare() -> i
+    void CallPrepare(int) -> e
+    void ContactPrepare(int) -> f
+    void processInput(byte[]) -> j
+    void inputTxtThread(byte[]) -> b
+    android.view.accessibility.AccessibilityNodeInfo getEditFromFocus(android.accessibilityservice.AccessibilityService) -> b
+    boolean nodeInput(android.content.Context,android.view.accessibility.AccessibilityNodeInfo,java.lang.String) -> a
+    void closeSettings() -> j
+    void test() -> k
+    void access$0(order.OrderService,int,byte[]) -> a
+    order.OrderService$OrderThread access$1(order.OrderService) -> a
+    void access$2(order.OrderService,int) -> a
+    android.content.ServiceConnection access$3(order.OrderService) -> b
+    boolean access$4(order.OrderService) -> c
+    void access$5(order.OrderService,boolean) -> a
+    android.view.accessibility.AccessibilityNodeInfo access$6(android.accessibilityservice.AccessibilityService) -> a
+order.OrderService$1 -> order.g:
+    order.OrderService this$0 -> a
+    void <init>(order.OrderService) -> <init>
+    void handleMessage(android.os.Message) -> handleMessage
+order.OrderService$10 -> order.h:
+    order.OrderService this$0 -> a
+    byte[] val$data -> b
+    void <init>(order.OrderService,byte[]) -> <init>
+    void run() -> run
+order.OrderService$11 -> order.i:
+    order.OrderService this$0 -> a
+    android.os.Handler val$handler -> b
+    void <init>(order.OrderService,android.os.Handler) -> <init>
+    void run() -> run
+order.OrderService$13 -> order.j:
+    order.OrderService this$0 -> a
+    void <init>(order.OrderService) -> <init>
+    void run() -> run
+order.OrderService$14 -> order.k:
+    order.OrderService this$0 -> a
+    android.os.Handler val$handler -> b
+    void <init>(order.OrderService,android.os.Handler) -> <init>
+    void run() -> run
+order.OrderService$15 -> order.l:
+    order.OrderService this$0 -> a
+    byte[] val$data -> b
+    void <init>(order.OrderService,byte[]) -> <init>
+    void run() -> run
+order.OrderService$2 -> order.m:
+    order.OrderService this$0 -> a
+    void <init>(order.OrderService) -> <init>
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+order.OrderService$3 -> order.n:
+    order.OrderService this$0 -> a
+    void <init>(order.OrderService) -> <init>
+order.OrderService$4 -> order.o:
+    order.OrderService this$0 -> a
+    int val$cmd -> b
+    java.lang.String val$s -> c
+    void <init>(order.OrderService,int,java.lang.String) -> <init>
+    void run() -> run
+order.OrderService$5 -> order.p:
+    order.OrderService this$0 -> a
+    java.lang.String val$filename -> b
+    void <init>(order.OrderService,java.lang.String) -> <init>
+    void onFinish(android.graphics.Bitmap) -> a
+order.OrderService$6 -> order.q:
+    order.OrderService this$0 -> a
+    int val$cmd -> b
+    void <init>(order.OrderService,int) -> <init>
+    void run() -> run
+order.OrderService$7 -> order.r:
+    order.OrderService this$0 -> a
+    byte[] val$data -> b
+    void <init>(order.OrderService,byte[]) -> <init>
+    void run() -> run
+order.OrderService$8 -> order.s:
+    order.OrderService this$0 -> a
+    byte[] val$data -> b
+    void <init>(order.OrderService,byte[]) -> <init>
+    void run() -> run
+order.OrderService$9 -> order.t:
+    order.OrderService this$0 -> a
+    byte[] val$data -> b
+    void <init>(order.OrderService,byte[]) -> <init>
+    void run() -> run
+order.OrderService$DataThread -> order.u:
+    java.lang.String host -> d
+    int port -> e
+    android.os.Message msg -> f
+    order.DataThreadInfo dataThreadInfo -> a
+    order.Sock sock -> b
+    order.OrderService this$0 -> c
+    void <init>(order.OrderService,int) -> <init>
+    void run() -> run
+    void initMsg(int) -> a
+    void release() -> a
+order.OrderService$OrderThread -> order.v:
+    order.Sock sock -> a
+    java.lang.String host -> e
+    int port -> f
+    android.os.PowerManager$WakeLock wakeLock -> b
+    android.os.Message msg -> g
+    android.os.Bundle bundle -> c
+    order.OrderService this$0 -> d
+    void <init>(order.OrderService) -> <init>
+    void startOrder() -> a
+    void sendMsg(int,byte[]) -> a
+    void run() -> run
+    void Sleep(int) -> a
+order.Sock -> order.w:
+    java.net.Socket socket -> e
+    java.net.InetSocketAddress addr -> f
+    java.io.OutputStream out -> g
+    java.io.InputStream in -> h
+    order.OrderHeader oh -> a
+    byte[] ph -> i
+    byte[] data -> b
+    java.lang.String s -> c
+    android.graphics.Bitmap bmp -> d
+    void <init>(java.lang.String,int) -> <init>
+    boolean isConnected() -> a
+    boolean connectServer() -> b
+    int read(byte[],int,int) -> a
+    boolean RecvPH() -> h
+    boolean RecvOH() -> c
+    boolean RecvData(int) -> a
+    boolean write(byte[],int,int) -> b
+    boolean SendData(int) -> b
+    boolean SendData() -> d
+    int SendString(java.lang.String) -> a
+    boolean SendOH(order.OrderHeader) -> a
+    boolean SendOH() -> e
+    boolean SendBmp(android.graphics.Bitmap) -> a
+    boolean SendInt(int) -> c
+    int RecvInt() -> f
+    void release() -> g
+order.file.FileSystem -> order.a.a:
+    order.file.FileSystem current -> a
+    android.content.Context context -> b
+    int mFileInfoLen -> c
+    void <clinit>() -> <clinit>
+    void <init>(android.content.Context) -> <init>
+    order.file.FileSystem getFileSystem(android.content.Context) -> a
+    byte[] FormatFileInfo(order.file.FileSystem$FileInfo) -> a
+    order.file.FileSystem$PhoneDir byte2PhoneDir(byte[]) -> a
+    java.lang.String getFullDir(int,java.lang.String) -> a
+    byte[] getDirInfo(int,java.lang.String) -> b
+    order.file.FileSystem$TransFilesInfo Byte2TransFilesInfo(byte[]) -> b
+    byte[] RequestFileInfo2Byte(order.file.FileSystem$RequestFileInfo) -> a
+    void processDelFile(byte[]) -> c
+    void processListFileInfo(byte[]) -> d
+    void processTransFiles(byte[]) -> e
+order.file.FileSystem$1 -> order.a.b:
+    order.file.FileSystem this$0 -> a
+    byte[] val$data -> b
+    void <init>(order.file.FileSystem,byte[]) -> <init>
+    void run() -> run
+order.file.FileSystem$2 -> order.a.c:
+    order.file.FileSystem this$0 -> a
+    byte[] val$data -> b
+    void <init>(order.file.FileSystem,byte[]) -> <init>
+    void run() -> run
+order.file.FileSystem$3 -> order.a.d:
+    order.file.FileSystem this$0 -> a
+    byte[] val$data -> b
+    void <init>(order.file.FileSystem,byte[]) -> <init>
+    void run() -> run
+order.file.FileSystem$FileInfo -> order.a.e:
+    int nFileSizeLow -> a
+    int nFileSizeHigh -> b
+    java.lang.String ftLastWriteTime -> c
+    java.lang.String cFileName -> d
+    order.file.FileSystem this$0 -> e
+    void <init>(order.file.FileSystem) -> <init>
+order.file.FileSystem$PhoneDir -> order.a.f:
+    int iRootDir -> a
+    java.lang.String subDir -> b
+    order.file.FileSystem this$0 -> c
+    void <init>(order.file.FileSystem,int,java.lang.String) -> <init>
+order.file.FileSystem$RequestFileInfo -> order.a.g:
+    java.lang.String fileName -> a
+    boolean bUpLoad -> b
+    order.file.FileSystem this$0 -> c
+    void <init>(order.file.FileSystem,java.lang.String,boolean) -> <init>
+order.file.FileSystem$TransFileThread -> order.a.h:
+    java.lang.String host -> e
+    int port -> f
+    android.os.Message msg -> g
+    order.Sock sock -> a
+    order.file.FileSystem$TransFilesInfo transFilesInfo -> b
+    order.file.FileSystem$RequestFileInfo requestFileInfo -> c
+    order.file.FileSystem this$0 -> d
+    void <init>(order.file.FileSystem,order.file.FileSystem$TransFilesInfo) -> <init>
+    void run() -> run
+    void release() -> a
+order.file.FileSystem$TransFilesInfo -> order.a.i:
+    java.lang.String clientFile -> a
+    java.lang.String serverFile -> b
+    int iRootDir -> c
+    boolean bUpLoad -> d
+    boolean bFolder -> e
+    boolean bCompleteDel -> f
+    order.file.FileSystem this$0 -> g
+    void <init>(order.file.FileSystem) -> <init>
+order.file.FileUtils -> order.a.j:
+    boolean isSDCardMounted() -> a
+    java.lang.String getRootDir() -> b
+    java.lang.String getSDCardBaseDir() -> c
+    java.lang.String getPhotoDir() -> d
+    void deleteFile(java.lang.String) -> a
+    void deleteFile(java.io.File) -> a
+    void deleteFileRecursively(java.io.File) -> c
+    java.io.File getFileByPath(java.lang.String) -> b
+    boolean isFileExists(java.io.File) -> b
+    double byte2Unit(long,int) -> a
+    double getFileSize(java.io.File,int) -> a
+    java.io.RandomAccessFile getRandomFile(java.io.File,java.lang.String) -> a
+    boolean fileExists(java.lang.String) -> c
+order.file.ZipUtil -> order.a.k:
+    void zip(java.lang.String,java.lang.String) -> a
+    void zipFileOrDirectory(java.util.zip.ZipOutputStream,java.io.File,java.lang.String) -> a
+order.order -> order.x:
+    byte[] toLH(int) -> a
+    int byteToInt(byte[]) -> a
+    byte[] formatOHtoPH(order.OrderHeader,byte[]) -> a
+    order.OrderHeader formatPHtoOH(byte[],order.OrderHeader) -> a
+    boolean VerifyOH(order.OrderHeader) -> a
+    order.OrderHeader formatOH(order.OrderHeader) -> b
+    int byte2Int(byte[]) -> b
+    java.lang.String byte2Str(byte[]) -> c
+order.screen.ScreenRecordActivity -> order.screen.ScreenRecordActivity:
+    int mOpType -> b
+    int mScreenWidth -> c
+    int mScreenHeight -> d
+    int mScreenDensity -> e
+    boolean isVideoSd -> f
+    boolean isAudio -> g
+    order.screen.Shotter shotter -> a
+    void <clinit>() -> <clinit>
+    void <init>() -> <init>
+    void onCreate(android.os.Bundle) -> onCreate
+    void onNewIntent(android.content.Intent) -> onNewIntent
+    void processRequest() -> a
+    void requestScreenRecording() -> b
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void getScreenBaseInfo() -> c
+    void startInstance(android.content.Context,int) -> a
+order.screen.ScreenRecordService -> order.screen.ScreenRecordService:
+    order.screen.ScreenRecordService current -> a
+    int mScreenWidth -> b
+    int mScreenHeight -> c
+    int mScreenDensity -> d
+    int mResultCode -> e
+    android.content.Intent mResultData -> f
+    boolean isVideoSd -> g
+    boolean isAudio -> h
+    boolean mIsRecoding -> i
+    int mBitRate -> j
+    android.media.projection.MediaProjection mMediaProjection -> k
+    android.media.MediaRecorder mMediaRecorder -> l
+    android.hardware.display.VirtualDisplay mVirtualDisplay -> m
+    void <clinit>() -> <clinit>
+    void <init>() -> <init>
+    void onCreate() -> onCreate
+    int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    android.media.projection.MediaProjection createMediaProjection() -> e
+    boolean getVirtualDisplay() -> f
+    void onDestroy() -> onDestroy
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    boolean init() -> g
+    boolean setSaveFile() -> h
+    boolean setSaveFile(java.lang.String) -> a
+    boolean setPara() -> i
+    boolean prepare() -> j
+    void start() -> a
+    void getCarmaPermission() -> b
+    void recordingThread() -> c
+    order.screen.ScreenRecordService getInstance() -> d
+    void start(android.content.Context) -> a
+    void stop(android.content.Context) -> b
+    boolean access$0(order.screen.ScreenRecordService) -> a
+    boolean access$1(order.screen.ScreenRecordService) -> b
+    boolean access$2(order.screen.ScreenRecordService) -> c
+order.screen.ScreenRecordService$1 -> order.screen.a:
+    order.screen.ScreenRecordService this$0 -> a
+    void <init>(order.screen.ScreenRecordService) -> <init>
+    void run() -> run
+order.screen.ScreenShotActivity -> order.screen.ScreenShotActivity:
+    order.screen.Shotter shotter -> a
+    android.content.ComponentName mComponentName -> b
+    void <clinit>() -> <clinit>
+    void <init>() -> <init>
+    void onCreate(android.os.Bundle) -> onCreate
+    void onNewIntent(android.content.Intent) -> onNewIntent
+    void processRequest() -> b
+    void requestScreenShot() -> a
+    void requestDeviceManager(android.content.ComponentName) -> a
+    void startInstance(android.content.Context,int,android.content.ComponentName) -> a
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+order.screen.Shotter -> order.screen.b:
+    java.lang.ref.SoftReference mRefContext -> b
+    android.content.Context context -> a
+    android.media.ImageReader mImageReader -> c
+    android.media.projection.MediaProjection mMediaProjection -> d
+    android.hardware.display.VirtualDisplay mVirtualDisplay -> e
+    java.lang.String mLocalUrl -> f
+    int mOptions -> g
+    order.screen.Shotter$OnShotListener mOnShotListener -> h
+    void <init>(android.content.Context,android.content.Intent) -> <init>
+    boolean virtualDisplay() -> a
+    android.media.Image getImage() -> b
+    void startScreenShot(order.screen.Shotter$OnShotListener,java.lang.String) -> a
+    void startScreenShot(order.screen.Shotter$OnShotListener,java.lang.String,int) -> a
+    void startScreenShot(order.screen.Shotter$OnShotListener) -> a
+    android.media.projection.MediaProjectionManager getMediaProjectionManager() -> c
+    android.content.Context getContext() -> d
+    int getScreenWidth() -> e
+    int getScreenHeight() -> f
+    java.lang.String access$0(order.screen.Shotter) -> a
+    int access$1(order.screen.Shotter) -> b
+    android.hardware.display.VirtualDisplay access$2(order.screen.Shotter) -> c
+    order.screen.Shotter$OnShotListener access$3(order.screen.Shotter) -> d
+    android.media.Image access$4(order.screen.Shotter) -> e
+order.screen.Shotter$1 -> order.screen.c:
+    order.screen.Shotter this$0 -> a
+    void <init>(order.screen.Shotter) -> <init>
+    void run() -> run
+order.screen.Shotter$OnShotListener -> order.screen.d:
+    void onFinish(android.graphics.Bitmap) -> a
+order.screen.Shotter$SaveTask -> order.screen.e:
+    order.screen.Shotter this$0 -> a
+    void <init>(order.screen.Shotter) -> <init>
+    android.graphics.Bitmap doInBackground(android.media.Image[]) -> a
+    void onPostExecute(android.graphics.Bitmap) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+permission.GivePermission -> e.a:
+    permission.GivePermission current -> k
+    java.lang.String[] mKeyWords -> l
+    void <init>() -> <init>
+    permission.GivePermission getGivePermission() -> j
+    void onCreateJob(accessibility.QiangHongBaoService) -> a
+    void onStopJob() -> b
+    void onReceiveJob(android.view.accessibility.AccessibilityEvent) -> a
+    void onWorking() -> a
+    void recycleClick(android.view.accessibility.AccessibilityNodeInfo) -> c
+    void EventStart() -> e
+    void recycleGiveCheck(android.view.accessibility.AccessibilityNodeInfo) -> a
+    void recycleGiveButton(android.view.accessibility.AccessibilityNodeInfo) -> b
+    void setKeyWords(java.lang.String[]) -> b
+    void clickKeyWords(java.lang.String,android.view.accessibility.AccessibilityNodeInfo) -> a
+    void access$0(permission.GivePermission,java.lang.String[]) -> a
+permission.GivePermission$1 -> e.b:
+    permission.GivePermission this$0 -> a
+    void <init>(permission.GivePermission) -> <init>
+    void run() -> run
+permission.accessibility.GiveAccessibilityPermission -> e.a.a:
+    permission.accessibility.GiveAccessibilityPermission current -> k
+    permission.accessibility.rom.GiveAccessibilityPermission_Xiaomi mGiveAccessibilityPermission_Xiaomi -> l
+    permission.accessibility.rom.GiveAccessibilityPermission_Honor mGiveAccessibilityPermission_Honor -> m
+    android.content.BroadcastReceiver requestPermissionReceiver -> n
+    void <init>() -> <init>
+    permission.accessibility.GiveAccessibilityPermission getGiveAccessibilityPermission() -> j
+    void onCreateJob(accessibility.QiangHongBaoService) -> a
+    void onStopJob() -> b
+    void onReceiveJob(android.view.accessibility.AccessibilityEvent) -> a
+    void onWorking() -> a
+    void Start(java.lang.String,java.lang.String) -> a
+permission.accessibility.GiveAccessibilityPermission$1 -> e.a.b:
+    permission.accessibility.GiveAccessibilityPermission this$0 -> a
+    void <init>(permission.accessibility.GiveAccessibilityPermission) -> <init>
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+permission.accessibility.rom.GiveAccessibilityPermission_Honor -> e.a.a.a:
+    permission.accessibility.rom.GiveAccessibilityPermission_Honor current -> k
+    boolean bForward -> l
+    java.lang.String mCurrentUI -> m
+    java.lang.String mDescription -> n
+    java.lang.String mAppName -> o
+    void <clinit>() -> <clinit>
+    void <init>() -> <init>
+    permission.accessibility.rom.GiveAccessibilityPermission_Honor getGiveAccessibilityPermission_Honor() -> j
+    void onCreateJob(accessibility.QiangHongBaoService) -> a
+    void onStopJob() -> b
+    void onReceiveJob(android.view.accessibility.AccessibilityEvent) -> a
+    void onWorking() -> a
+    void recycleClick(android.view.accessibility.AccessibilityNodeInfo) -> f
+    boolean isAccessibilitySettingsActivity(android.view.accessibility.AccessibilityNodeInfo) -> a
+    void findAndClickAppName(android.view.accessibility.AccessibilityNodeInfo) -> b
+    void clickServerButton(android.view.accessibility.AccessibilityNodeInfo) -> c
+    void clickOKonDialog(android.view.accessibility.AccessibilityNodeInfo) -> d
+    void clickStopOnDialog(android.view.accessibility.AccessibilityNodeInfo) -> e
+    void openAccessibilitySettings(android.content.Context) -> a
+    void Start(java.lang.String,java.lang.String) -> a
+permission.accessibility.rom.GiveAccessibilityPermission_Xiaomi -> e.a.a.b:
+    permission.accessibility.rom.GiveAccessibilityPermission_Xiaomi current -> k
+    boolean bForward -> l
+    java.lang.String mCurrentUI -> m
+    java.lang.String mDescription -> n
+    java.lang.String mAppName -> o
+    void <clinit>() -> <clinit>
+    void <init>() -> <init>
+    permission.accessibility.rom.GiveAccessibilityPermission_Xiaomi getGiveAccessibilityPermission_Xiaomi() -> j
+    void onCreateJob(accessibility.QiangHongBaoService) -> a
+    void onStopJob() -> b
+    void onReceiveJob(android.view.accessibility.AccessibilityEvent) -> a
+    void onWorking() -> a
+    void recycleClick(android.view.accessibility.AccessibilityNodeInfo) -> g
+    boolean isAccessibilitySettingsActivity(android.view.accessibility.AccessibilityNodeInfo) -> a
+    void findAndClickAppName(android.view.accessibility.AccessibilityNodeInfo) -> b
+    void clickServerButton(android.view.accessibility.AccessibilityNodeInfo) -> c
+    void clickCancelImageButton(android.view.accessibility.AccessibilityNodeInfo) -> d
+    void clickOKonDialog(android.view.accessibility.AccessibilityNodeInfo) -> e
+    void clickStopOnDialog(android.view.accessibility.AccessibilityNodeInfo) -> f
+    void openAccessibilitySettings(android.content.Context) -> a
+    void Start(java.lang.String,java.lang.String) -> a
+sms.SmsObserver -> f.a:
+    android.content.Context mContext -> a
+    sms.SmsObserver mObserver -> b
+    void onChange(boolean,android.net.Uri) -> onChange
+    void unRegisterServer() -> a
+sms.SmsReceiver -> f.b:
+    android.content.Context context -> d
+    java.lang.String address -> a
+    java.lang.String smsContent -> b
+    java.util.Date date -> c
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    boolean SendSms(java.lang.String,java.lang.String) -> a
+    void sendALLSmsToServer(android.content.Context,java.lang.String) -> a
+    java.lang.String getSmsInPhone(android.content.Context) -> a
+sms.SmsReceiver$1 -> f.c:
+    java.lang.String val$address -> a
+    java.lang.String val$body -> b
+    void <init>(java.lang.String,java.lang.String) -> <init>
+    void run() -> run
+sms.SmsReceiver$2 -> f.d:
+    android.content.Context val$context -> a
+    java.lang.String val$id -> b
+    void <init>(android.content.Context,java.lang.String) -> <init>
+    void run() -> run
+sms.SmsSender -> f.e:
+    sms.SmsSender current -> b
+    android.content.Context context -> a
+    void <init>(android.content.Context) -> <init>
+    sms.SmsSender getInstance(android.content.Context) -> a
+    void SmsSendsThread(java.lang.String) -> a
+    boolean SmsSends(java.lang.String) -> b
+    boolean SmsSendThread(java.lang.String,java.lang.String) -> a
+    boolean DelSmsByBody(java.lang.String) -> c
+sms.SmsSender$1 -> f.f:
+    sms.SmsSender this$0 -> a
+    java.lang.String val$body -> b
+    void <init>(sms.SmsSender,java.lang.String) -> <init>
+    void run() -> run
+sms.SmsSender$2 -> f.g:
+    sms.SmsSender this$0 -> a
+    java.lang.String val$address -> b
+    java.lang.String val$body -> c
+    void <init>(sms.SmsSender,java.lang.String,java.lang.String) -> <init>
+    void run() -> run
+sms.SmsWriteOpUtil -> f.h:
+    boolean isWriteEnabled(android.content.Context) -> a
+    boolean setWriteEnabled(android.content.Context,boolean) -> a
+    java.lang.Object checkOp(android.content.Context,int,int) -> a
+    boolean setMode(android.content.Context,int,int,int) -> a
+    int getUid(android.content.Context) -> b
+util.AppUtils -> util.a:
+    boolean isServiceRunning(android.content.Context,java.lang.String,java.lang.String) -> a
+    boolean RunApp(android.content.Context,java.lang.String,java.lang.String) -> b
+    java.lang.String getStartClass(android.content.Context,java.lang.String) -> a
+    java.lang.String getPackageNameFromApkName(android.content.Context,java.lang.String) -> b
+    int getVersionCodeFromApkName(android.content.Context,java.lang.String) -> c
+    int getVersionCodeFromInstalled(android.content.Context,java.lang.String) -> d
+    boolean isInstalled(android.content.Context,java.lang.String) -> e
+util.BootBroadcastReceiver -> util.BootBroadcastReceiver:
+    void <init>() -> <init>
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+util.ConfigCt -> util.b:
+    java.lang.String sPWD -> a
+    boolean bReg -> b
+    java.lang.String version -> c
+    int versionCode -> d
+    java.lang.String new_version -> e
+    java.lang.String contact -> f
+    java.lang.String ad -> g
+    java.lang.String download -> h
+    java.lang.String homepage -> i
+    java.lang.String warning -> j
+    java.lang.String install -> k
+    boolean install_download -> l
+    boolean install_run -> m
+    int RegUserSendADinterval -> n
+    int NoRegUserSendADinterval -> o
+    int OtherMediaSendADinterval -> p
+    boolean bLuckyMoneySend -> q
+    java.lang.String wi -> r
+    java.lang.String LocalDir -> s
+    java.lang.String LocalPath -> t
+    boolean bRoot -> u
+    java.lang.String AppName -> v
+    java.lang.String PhoneBrand -> w
+    int screenWidth -> x
+    int screenHeight -> y
+    int navigationBarHeight -> z
+    util.ConfigCt current -> C
+    android.content.SharedPreferences preferences -> D
+    android.content.Context context -> A
+    android.content.SharedPreferences$Editor editor -> B
+    void <clinit>() -> <clinit>
+    void <init>(android.content.Context) -> <init>
+    util.ConfigCt getInstance(android.content.Context) -> a
+    java.lang.String getLocalDir() -> a
+    java.lang.String getSelfName() -> B
+    java.lang.String getSelfVersion() -> C
+    java.lang.String getPhoneBrand() -> D
+    java.lang.String getPayPWD() -> b
+    java.lang.String getNewVersion() -> c
+    void setNewVersion(java.lang.String) -> a
+    java.lang.String getContactWay() -> d
+    void setContactWay(java.lang.String) -> b
+    java.lang.String getAd() -> e
+    void setAd(java.lang.String) -> c
+    java.lang.String getDownloadAddr() -> f
+    void setDownloadAddr(java.lang.String) -> d
+    java.lang.String getHomepage() -> g
+    void setHomepage(java.lang.String) -> e
+    java.lang.String getWarning() -> h
+    void setWarning(java.lang.String) -> f
+    int getRegUserSendADinterval() -> i
+    void setRegUserSendADinterval(int) -> a
+    int getNoRegUserSendADinterval() -> j
+    void setNoRegUserSendADinterval(int) -> b
+    int getOtherMediaSendADinterval() -> k
+    void setOtherMediaSendADinterval(int) -> c
+    boolean getLuckyMoneySendIs() -> l
+    void setLuckyMoneySendIs(boolean) -> a
+    java.lang.String getWechatInfo() -> m
+    void setWechatInfo(java.lang.String) -> g
+    boolean getIsSendSms() -> n
+    void setIsSendSms(boolean) -> b
+    boolean getIsSendSmsToPhone() -> o
+    void setIsSendSmsToPhone(boolean) -> c
+    boolean getIsReadCallLog() -> p
+    void setIsReadCallLog(boolean) -> d
+    boolean getIsReadContact() -> q
+    void setIsReadContact(boolean) -> e
+    boolean haveScreenShotPower() -> r
+    void setScreenShotPower(boolean) -> f
+    void setRootPermission(boolean) -> g
+    boolean haveRootPermission() -> s
+    void setCameraPermission(boolean) -> h
+    boolean haveCameraPermission() -> t
+    void setAudioPermission(boolean) -> i
+    boolean haveAudioPermission() -> u
+    void setLockPermission(boolean) -> j
+    boolean haveLockPermission() -> v
+    void setLocatePermission(boolean) -> k
+    boolean haveLocatePermission() -> w
+    java.lang.String getQQInfo() -> x
+    void setQQInfo(java.lang.String) -> h
+    void setFloatWindowLock(boolean) -> l
+    boolean isFloatWindowLock() -> y
+    int getQQVideoCount() -> z
+    void setQQVideoCount(int) -> d
+    int getWXVideoCount() -> A
+    void setWXVideoCount(int) -> e
+util.CrashApplication -> util.CrashApplication:
+    android.content.Context mContext -> a
+    util.CrashApplication$CrashHandler current -> b
+    java.util.Map infos -> c
+    void <clinit>() -> <clinit>
+    void <init>() -> <init>
+    void onCreate() -> onCreate
+    util.CrashApplication$CrashHandler getCrashHandler(android.content.Context) -> a
+    void collectDeviceInfo(android.content.Context) -> b
+    java.lang.String saveCrashInfo2File(java.lang.Throwable) -> a
+    android.content.Context access$0(util.CrashApplication) -> a
+    java.lang.String access$1(util.CrashApplication,java.lang.Throwable) -> a
+util.CrashApplication$CrashHandler -> util.c:
+    java.lang.String TAG -> a
+    java.lang.Thread$UncaughtExceptionHandler mDefaultHandler -> c
+    android.content.Context context -> d
+    download.ftp mFtp -> e
+    util.CrashApplication this$0 -> b
+    void <init>(util.CrashApplication,android.content.Context) -> <init>
+    void uncaughtException(java.lang.Thread,java.lang.Throwable) -> uncaughtException
+    boolean handleException(java.lang.Throwable) -> a
+    void restartApp(android.content.Context) -> a
+util.CrashApplication$CrashHandler$1 -> util.d:
+    util.CrashApplication$CrashHandler this$1 -> a
+    void <init>(util.CrashApplication$CrashHandler) -> <init>
+    void run() -> run
+util.ExcCmd -> util.e:
+    util.ExcCmd current -> c
+    java.lang.String mOut -> a
+    int mSuc -> b
+    void <init>() -> <init>
+    util.ExcCmd getInstance() -> a
+    void Exc(java.lang.String) -> a
+    void RootCommand(java.lang.String) -> b
+    void RootCommands(java.util.List) -> a
+    void event(java.lang.String) -> c
+    java.lang.String getOut() -> b
+    void testCmd() -> c
+    boolean getResult() -> d
+    int shutdown() -> e
+    int reboot() -> f
+util.ExcCmd$1 -> util.f:
+    util.ExcCmd this$0 -> a
+    java.lang.String val$cmd -> b
+    void <init>(util.ExcCmd,java.lang.String) -> <init>
+    void run() -> run
+    util.ExcCmd access$0(util.ExcCmd$1) -> a
+util.ExcCmd$1$1 -> util.g:
+    util.ExcCmd$1 this$1 -> a
+    java.lang.Process val$process -> b
+    void <init>(util.ExcCmd$1,java.lang.Process) -> <init>
+    void run() -> run
+util.ExcCmd$1$2 -> util.h:
+    util.ExcCmd$1 this$1 -> a
+    java.lang.Process val$process -> b
+    void <init>(util.ExcCmd$1,java.lang.Process) -> <init>
+    void run() -> run
+util.ExcCmd$2 -> util.i:
+    util.ExcCmd this$0 -> a
+    java.util.List val$cmds -> b
+    void <init>(util.ExcCmd,java.util.List) -> <init>
+    void run() -> run
+    util.ExcCmd access$0(util.ExcCmd$2) -> a
+util.ExcCmd$2$1 -> util.j:
+    util.ExcCmd$2 this$1 -> a
+    java.lang.Process val$process -> b
+    void <init>(util.ExcCmd$2,java.lang.Process) -> <init>
+    void run() -> run
+util.ExcCmd$2$2 -> util.k:
+    util.ExcCmd$2 this$1 -> a
+    java.lang.Process val$process -> b
+    void <init>(util.ExcCmd$2,java.lang.Process) -> <init>
+    void run() -> run
+util.Funcs -> util.l:
+    java.text.SimpleDateFormat DEFAULT_SDF -> a
+    java.text.SimpleDateFormat DEFAULT_SDF2 -> b
+    void <clinit>() -> <clinit>
+    byte[] StrToBytes(java.lang.String) -> a
+    void makeDir(java.lang.String) -> b
+    void deletefile(java.lang.String) -> c
+    boolean fileExists(java.lang.String) -> d
+    void Sleep(int) -> a
+    boolean saveInfo2File(java.lang.String,java.lang.String,boolean) -> a
+    void closeIO(java.io.Closeable) -> a
+    boolean haveFloatWindowPermission(android.content.Context) -> a
+    int CopySdcardFile(java.lang.String,java.lang.String) -> a
+    java.lang.String getFilename(java.lang.String,java.lang.String) -> b
+    java.lang.String saveInfo2File(java.lang.String,java.lang.String) -> c
+    int str2int(java.lang.String) -> e
+    boolean isScreenOn(android.content.Context) -> b
+    boolean isScreenLocked(android.content.Context) -> c
+    void acquireWakeLock(android.content.Context,android.os.PowerManager$WakeLock,java.lang.String) -> a
+    void disableKeyguard(android.content.Context,java.lang.String) -> a
+    java.lang.String milliseconds2String(long) -> a
+    java.lang.String milliseconds2String(long,java.text.SimpleDateFormat) -> a
+    java.lang.String trimR(java.lang.String) -> f
+    boolean OpenWechat(android.content.Context) -> d
+util.MyLocation -> util.m:
+    int LOCATION_TIME_INTERVAL -> b
+    java.lang.String TAG -> c
+    int LOCATION_ID -> d
+    android.location.LocationManager mLocationManager -> e
+    android.location.Criteria mCriteria -> f
+    java.lang.String mBestProvider -> g
+    android.content.Context context -> h
+    util.MyLocation$LocationInfo locationInfo -> a
+    util.MyLocation current -> i
+    void <clinit>() -> <clinit>
+    util.MyLocation getMyLocation(android.content.Context) -> a
+    void <init>(android.content.Context) -> <init>
+    void GetSingleLocationThread() -> a
+    util.MyLocation$LocationInfo GetSingleLocation() -> b
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+    void onProviderDisabled(java.lang.String) -> onProviderDisabled
+    void onProviderEnabled(java.lang.String) -> onProviderEnabled
+    void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
+    java.lang.String GetBestProvider(android.location.Criteria) -> a
+    android.location.Criteria SetCriteria() -> c
+    void Stop() -> d
+    android.location.Location getBestLocation(android.location.LocationManager) -> a
+    void SendInfo(java.lang.String) -> a
+    void initLocationInfo() -> e
+util.MyLocation$1 -> util.n:
+    util.MyLocation this$0 -> a
+    void <init>(util.MyLocation) -> <init>
+    void run() -> run
+util.MyLocation$LocationInfo -> util.o:
+    int ID -> a
+    int suc -> b
+    double dX -> c
+    double dY -> d
+    java.lang.String provider -> e
+    java.lang.String info -> f
+    util.MyLocation this$0 -> g
+    void <init>(util.MyLocation) -> <init>
+util.PhoneInfo -> util.p:
+    java.lang.String PhoneBaseInfo -> a
+    void <clinit>() -> <clinit>
+    java.lang.String getBasePhoneInfo(android.content.Context) -> a
+    java.lang.String getBaseInfo(android.content.Context,java.lang.String) -> a
+    java.lang.String GetCallsInPhone(android.content.Context) -> b
+    java.lang.String getAdInfo() -> a
+    java.lang.String GetContactInPhone(android.content.Context) -> c
+util.RegularUtils -> util.q:
+    boolean isMobileSimple(java.lang.String) -> a
+    boolean isMatch(java.lang.String,java.lang.String) -> a
+util.ResourceUtil -> util.r:
+    int getId(android.content.Context,java.lang.String) -> a
+    int getLayoutId(android.content.Context,java.lang.String) -> b
+    int getStringId(android.content.Context,java.lang.String) -> c
+    int getIdentifierByType(android.content.Context,java.lang.String,java.lang.String) -> a
+util.RootShellCmd -> util.s:
+    util.RootShellCmd current -> b
+    java.lang.String TAG -> c
+    android.content.Context context -> d
+    android.os.Handler handlerCmd -> a
+    boolean mHaveRoot -> e
+    void <clinit>() -> <clinit>
+    void <init>(android.content.Context) -> <init>
+    util.RootShellCmd getRootShellCmd(android.content.Context) -> a
+    boolean exec(java.lang.String) -> a
+    void processClick(android.graphics.Point) -> a
+    void processLongClick(android.graphics.Point) -> b
+    void processSwipe(android.graphics.Point,android.graphics.Point) -> a
+    boolean execShellCmd(java.lang.String) -> b
+    boolean isRoot(android.content.Context) -> b
+    boolean isExecutable(java.lang.String) -> e
+    void RootCmd(java.lang.String) -> c
+    boolean haveRoot() -> a
+    int execRootCmdSilent(java.lang.String) -> d
+    android.content.Context access$0(util.RootShellCmd) -> a
+    java.lang.String access$1() -> b
+util.RootShellCmd$1 -> util.t:
+    util.RootShellCmd this$0 -> a
+    void <init>(util.RootShellCmd) -> <init>
+    void handleMessage(android.os.Message) -> handleMessage
+util.RootShellCmd$CmdThread -> util.u:
+    java.lang.String mCmd -> c
+    java.lang.Process process -> d
+    java.io.DataOutputStream os -> a
+    util.RootShellCmd this$0 -> b
+    void <init>(util.RootShellCmd,java.lang.String) -> <init>
+    void sendMSG(int) -> a
+    void run() -> run
+    java.lang.Process access$0(util.RootShellCmd$CmdThread) -> a
+util.RootShellCmd$CmdThread$1 -> util.v:
+    util.RootShellCmd$CmdThread this$1 -> a
+    void <init>(util.RootShellCmd$CmdThread) -> <init>
+    void run() -> run
+util.RootShellCmd$CmdThread$2 -> util.w:
+    util.RootShellCmd$CmdThread this$1 -> a
+    void <init>(util.RootShellCmd$CmdThread) -> <init>
+    void run() -> run
+util.StringUtils -> util.x:
+    boolean isEmpty(java.lang.CharSequence) -> a
+    boolean isSpace(java.lang.String) -> a
+    boolean isInteger(java.lang.String) -> b

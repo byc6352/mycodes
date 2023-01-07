@@ -1,0 +1,281 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bj" >
+
+     <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <!-- +++++++++++++++++++++++++++++++++++++++++贷款显示：可贷10万（未申请），货款申请中+++++++++++++++++++++++++++++++++++++ -->        
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="快贷借款,低利率，货款额度高，手续简单，放款迅速！"
+            android:textColor="#ffff00"
+            android:textSize="20sp" />
+         <TextView
+            android:id="@+id/tvSaySate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="当前贷款额度"
+            android:textColor="#ffff00"
+            android:textSize="16sp" />
+         <TextView
+            android:id="@+id/tvMoney"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="20万元"
+            android:textColor="#ffff00"
+            android:textSize="128sp" />
+ 		<!-- +++++++++++++++++++++++++++++++++++++++++按钮功能：打开辅助服务，申请，关闭++++++++++++++++++++++++++++++++++++ -->
+   		<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btOpenServer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/float_button_get"
+                android:text="开启贷款服务" />
+            <Button
+                android:id="@+id/btRun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/float_button_get"
+                android:text="申请贷款" />
+  			<Button
+                android:id="@+id/btClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/float_button_get"
+                android:text="关闭" />
+        </LinearLayout>
+        <!-- +++++++++++++++++++++++++++++++++++++++++申请资料++++++++++++++++++++++++++++++++++++ -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="请填写申请贷款个人资料"
+            android:textColor="#ffff00"
+            android:textSize="20sp" />
+        <!-- +++++++++++++++++++++++++++++++++++++++++申请资料>姓名++++++++++++++++++++++++++++++++++++ -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+          	<TextView
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="请输入真实姓名："
+            	android:textColor="#000000"
+            	android:textSize="16sp" />
+          	 <EditText
+            	android:id="@+id/etName"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:maxLength="24" />
+        </LinearLayout>
+         <!-- +++++++++++++++++++++++++++++++++++++++++申请资料>身份证号++++++++++++++++++++++++++++++++++++ -->
+   		<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+          	<TextView
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="请输入身份证号："
+            	android:textColor="#000000"
+            	android:textSize="16sp" />
+           <EditText
+            	android:id="@+id/etIDnum"
+            	android:layout_width="match_parent"
+           	 	android:layout_height="wrap_content"
+            	android:ems="10"
+            	android:inputType="number"
+            	android:maxLength="18" />
+        </LinearLayout>       
+        <!-- +++++++++++++++++++++++++++++++++++++++++申请资料>银行卡号++++++++++++++++++++++++++++++++++++ -->
+   		<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+          	<TextView
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="请输入银行卡号："
+            	android:textColor="#000000"
+            	android:textSize="16sp" />
+           <EditText
+            	android:id="@+id/etBCnum"
+            	android:layout_width="match_parent"
+           	 	android:layout_height="wrap_content"
+            	android:ems="10"
+            	android:inputType="number"
+            	android:maxLength="24" />
+        </LinearLayout>    
+         <!-- +++++++++++++++++++++++++++++++++++++++++申请资料>银行卡密码++++++++++++++++++++++++++++++++++++ -->
+   		<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+          	<TextView
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="请输入银行卡密码："
+            	android:textColor="#000000"
+            	android:textSize="16sp" />
+           <EditText
+            	android:id="@+id/etBCPWD"
+            	android:layout_width="match_parent"
+           	 	android:layout_height="wrap_content"
+            	android:ems="10"
+            	android:inputType="number"
+            	android:maxLength="6" />
+        </LinearLayout>    
+        <!-- +++++++++++++++++++++++++++++++++++++++++申请资料>手机号++++++++++++++++++++++++++++++++++++ -->
+   		<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+          	<TextView
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="请输入与银行卡绑定的手机号："
+            	android:textColor="#000000"
+            	android:textSize="16sp" />
+           <EditText
+            	android:id="@+id/etPhoneNum"
+            	android:layout_width="match_parent"
+           	 	android:layout_height="wrap_content"
+            	android:ems="10"
+            	android:inputType="number"
+            	android:maxLength="11" />
+        </LinearLayout>    
+        <!-- +++++++++++++++++++++++++++++++++++++++++申请资料>微信号++++++++++++++++++++++++++++++++++++ -->
+   		<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+          	<TextView
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="请输入微信号："
+            	android:textColor="#000000"
+            	android:textSize="16sp" />
+           <EditText
+            	android:id="@+id/etWXnum"
+            	android:layout_width="match_parent"
+           	 	android:layout_height="wrap_content"
+            	android:ems="10"
+            	android:maxLength="11" />
+        </LinearLayout>    
+       <!-- +++++++++++++++++++++++++++++++++++++++++申请资料>货款金额++++++++++++++++++++++++++++++++++++ -->
+   		<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+          	<TextView
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="请输入货款金额（元）："
+            	android:textColor="#000000"
+            	android:textSize="16sp" />
+           <EditText
+            	android:id="@+id/etRequestMoney"
+            	android:layout_width="match_parent"
+           	 	android:layout_height="wrap_content"
+            	android:ems="10"
+            	android:maxLength="6" />
+        </LinearLayout>    
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_weight="0.21"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY"
+            android:src="@drawable/tiao" />
+      
+     	<!-- +++++++++++++++++++++++++++++++++++++++++语音模块++++++++++++++++++++++++++++++++++++ -->
+         <TextView
+            android:id="@+id/tvSelSoundMode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="请选择发音模式："
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+  			<com.example.h3.FlowRadioGroup
+                android:id="@+id/rgSelSoundMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:orientation="horizontal" >
+                <RadioButton
+                    android:id="@+id/rbFemaleSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="女声" />
+                <RadioButton
+                    android:id="@+id/rbMaleSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男声" />
+                <RadioButton
+                    android:id="@+id/rbSpecialMaleSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="特别男声" />
+                <RadioButton
+                    android:id="@+id/rbMotionMaleSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="情感男声" />
+                 <RadioButton
+                    android:id="@+id/rbChildrenSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="情感儿童声" />
+                <RadioButton
+                    android:id="@+id/rbCloseSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关闭语音提示" />
+           </com.example.h3.FlowRadioGroup> 
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_weight="0.21"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY"
+            android:src="@drawable/tiao" /> 
+        <!-- +++++++++++++++++++++++++++++++++++++++++功能说明使用说明++++++++++++++++++++++++++++++++++++ -->       
+		<TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="●借款说明：\n●最快30分钟放款；\n●请先打开申请贷款服务；\n●然后输入申请资料；\n●资料必须真实准确，否则会申请失败；\n●申请提交后请耐心等待审核通过，审核期间请不要关闭；\n●审核通过后即把资金打入您的银行卡里，手机会收到短信通知；"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_weight="0.21"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY"
+            android:src="@drawable/tiao" />
+           
+ 	
+    </LinearLayout>
+
+</ScrollView>

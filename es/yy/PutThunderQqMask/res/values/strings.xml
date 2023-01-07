@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QQ埋雷专家助手</string>
+    <string name="Title">QQ埋雷埋雷专家助手</string>
+    <string name="action_settings">QQ埋雷专家助手设置</string>
+    <string name="service_name">手机助手</string>
+    <string name="accessibility_description">请启动QQ红包埋雷辅助服务！</string>
+    <string name="floating">开始埋雷</string>
+
+</resources>

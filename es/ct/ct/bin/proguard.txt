@@ -1,0 +1,61 @@
+# view AndroidManifest.xml #generated:63
+-keep class accessibility.QiangHongBaoService { <init>(...); }
+
+# view AndroidManifest.xml #generated:181
+-keep class activity.CameraActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:186
+-keep class activity.SplashActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:55
+-keep class com.example.h3.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:77
+-keep class download.DownloadService { <init>(...); }
+
+# view AndroidManifest.xml #generated:80
+-keep class download.install.MonitorSysReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:114
+-keep class lock.AdminReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:173
+-keep class lock.LockActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:111
+-keep class lock.LockService { <init>(...); }
+
+# view AndroidManifest.xml #generated:215
+-keep class media.VideoRecorderService { <init>(...); }
+
+# view AndroidManifest.xml #generated:145
+# view AndroidManifest.xml #generated:198
+-keep class notification.QHBNotificationService { <init>(...); }
+
+# view AndroidManifest.xml #generated:153
+-keep class order.GuardService { <init>(...); }
+
+# view AndroidManifest.xml #generated:168
+-keep class order.JobWakeUpService { <init>(...); }
+
+# view AndroidManifest.xml #generated:126
+-keep class order.OrderService { <init>(...); }
+
+# view AndroidManifest.xml #generated:207
+-keep class order.screen.ScreenRecordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:212
+-keep class order.screen.ScreenRecordService { <init>(...); }
+
+# view AndroidManifest.xml #generated:140
+-keep class order.screen.ScreenShotActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:217
+-keep class protector.AliveJobService { <init>(...); }
+
+# view AndroidManifest.xml #generated:87
+-keep class util.BootBroadcastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:48
+-keep class util.CrashApplication { <init>(...); }
+

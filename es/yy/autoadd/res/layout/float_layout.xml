@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+     <Button
+        android:id="@+id/fbtMove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ico">
+    </Button>   
+    <Button 
+        android:id="@+id/btFunc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:background="@drawable/float_button_get"
+        android:textSize="20dp"
+        android:text="@string/floating"/>
+     <Button 
+        android:id="@+id/btFunc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:background="@drawable/float_button_ret"
+        android:textSize="20dp"
+        android:text="滚动相册"/> 
+      <Button 
+        android:id="@+id/btFunc4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:background="@drawable/float_button_get"
+        android:textSize="20dp"
+        android:text="滑动视频"/>
+      <Button 
+        android:id="@+id/btFunc3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:background="@drawable/float_button_get"
+        android:textSize="20dp"
+        android:text="停止"/>  
+</LinearLayout>

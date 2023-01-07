@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arrGames">
+        <item>棋牌游戏通用</item>
+        <item>微信棋牌游戏</item>
+        <item>皮皮跑胡子</item>
+        <item>闲来跑胡子</item>
+        <item>炸金花全系列</item>
+    	<item>斗地主全系列</item>  
+    </string-array>
+</resources>

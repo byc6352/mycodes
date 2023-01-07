@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"
+    tools:context="com.byc.smslocated.MainActivity" >
+
+         <TextView
+            android:id="@+id/tvIndicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="设置完成！请点重新启动软件按钮！"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/btReboot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="重新启动 " />
+
+</LinearLayout>

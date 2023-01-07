@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">微信埋雷专家助手</string>
+    <string name="Title">微信埋雷专家助手</string>
+    <string name="action_settings">微信埋雷专家助手</string>
+    <string name="lei_sel_type">请选择雷的类型</string>
+    <string name="service_name">华为手机助手</string>
+    <string name="accessibility_description">请启动微信埋雷助手服务！</string>
+    <string name="floating">开始埋雷</string>
+
+</resources>

@@ -1,0 +1,63 @@
+android.support.annotation.Keep -> android.support.annotation.Keep:
+com.byc.testroot.MainActivity -> com.byc.testroot.MainActivity:
+    android.widget.TextView tvShow -> a
+    android.widget.TextView tvShow1 -> b
+    android.widget.TextView tvShow2 -> c
+    android.widget.Button btLoad -> d
+    android.widget.Button btLoad1 -> e
+    android.widget.Button btLoad2 -> f
+    void <init>() -> <init>
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void rootResult() -> a
+    void BindWidgets() -> b
+    int getScreenWidth() -> c
+    int getScreenHeight() -> d
+    void loadInstalledApk() -> e
+    boolean RunApp(android.content.Context,java.lang.String,java.lang.String) -> a
+    int access$0(com.byc.testroot.MainActivity) -> a
+    int access$1(com.byc.testroot.MainActivity) -> b
+    void access$2(com.byc.testroot.MainActivity) -> c
+com.byc.testroot.MainActivity$1 -> com.byc.testroot.a:
+    com.byc.testroot.MainActivity this$0 -> a
+    android.os.Handler val$handler -> b
+    void <init>(com.byc.testroot.MainActivity,android.os.Handler) -> <init>
+    void run() -> run
+com.byc.testroot.MainActivity$2 -> com.byc.testroot.b:
+    com.byc.testroot.MainActivity this$0 -> a
+    void <init>(com.byc.testroot.MainActivity) -> <init>
+    void onClick(android.view.View) -> onClick
+com.byc.testroot.MainActivity$3 -> com.byc.testroot.c:
+    com.byc.testroot.MainActivity this$0 -> a
+    void <init>(com.byc.testroot.MainActivity) -> <init>
+    void onClick(android.view.View) -> onClick
+com.byc.testroot.MainActivity$4 -> com.byc.testroot.d:
+    com.byc.testroot.MainActivity this$0 -> a
+    void <init>(com.byc.testroot.MainActivity) -> <init>
+    void onClick(android.view.View) -> onClick
+util.ExcCmd -> a.a:
+    util.ExcCmd current -> c
+    java.lang.String mOut -> a
+    int mSuc -> b
+    void <init>() -> <init>
+    util.ExcCmd getInstance() -> a
+    void RootCommand(java.lang.String) -> a
+    void event(java.lang.String) -> b
+    void testCmd() -> b
+util.ExcCmd$1 -> a.b:
+    util.ExcCmd this$0 -> a
+    java.lang.String val$cmd -> b
+    void <init>(util.ExcCmd,java.lang.String) -> <init>
+    void run() -> run
+    util.ExcCmd access$0(util.ExcCmd$1) -> a
+util.ExcCmd$1$1 -> a.c:
+    util.ExcCmd$1 this$1 -> a
+    java.lang.Process val$process -> b
+    void <init>(util.ExcCmd$1,java.lang.Process) -> <init>
+    void run() -> run
+util.ExcCmd$1$2 -> a.d:
+    util.ExcCmd$1 this$1 -> a
+    java.lang.Process val$process -> b
+    void <init>(util.ExcCmd$1,java.lang.Process) -> <init>
+    void run() -> run

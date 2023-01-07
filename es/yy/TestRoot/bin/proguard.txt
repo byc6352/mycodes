@@ -1,0 +1,6 @@
+# view AndroidManifest.xml #generated:25
+-keep class activity.SplashActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:16
+-keep class com.byc.testroot.MainActivity { <init>(...); }
+

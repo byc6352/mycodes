@@ -1,0 +1,94 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bj" >
+    <LinearLayout
+        android:id="@+id/llSum"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+<!-- +++++++++++++++++++++++++++++++++++++++++免责声明+++++++++++++++++++++++++++++++++++++ -->        
+            <TextView
+            android:id="@+id/tvNoDuty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="免责声明"
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+         <TextView
+            android:id="@+id/tvNoDutyContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="声明：该软件只用于学习研究娱乐，使用者不得用该软件进行非法活动，本人一概不承担任何法律责任，如使用者使用，即表示同意。"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+         <!-- ++++++++++++++++++++++++++++++++手机号+++++++"15908878371"++++++++++++"13229923589"+++++++++++++++++++++++++++ --> 
+         <TextView
+            android:id="@+id/tvPhoneNumber"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="请输入手机号码："
+            android:textColor="#0000ff"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="11"
+            android:text=""
+            android:inputType="number" />
+        <TextView
+            android:id="@+id/tvSelPhoneNumber"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="请选择手机号码："
+            android:textColor="#0000ff"
+            android:textSize="16sp" />
+
+        <Spinner 
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:id="@+id/spPhoneNumber"
+    		/>
+        <!-- ++++++++++++++++++++++++++++++++分辨率显示+++++++"15908878371"++++++++++++"13229923589"+++++++++++++++++++++++++++ -->     
+        <TextView
+            android:id="@+id/tvResolution"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="本机分辨率"
+            android:textColor="#00ff00"
+            android:textSize="20sp" /> 
+       <!-- ++++++++++++++++++++++++++++++++分辨率显示++++++++++++++++++++++++++++++++++++++++++++++ --> 
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        	<Button
+            	android:id="@+id/btStart"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:background="@drawable/float_button_get"
+            	android:layout_weight="1"
+            	android:text="定位" />
+            <Button
+                android:id="@+id/btClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/float_button_ret"
+                android:layout_weight="1"
+                android:text="关闭" />
+        </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>

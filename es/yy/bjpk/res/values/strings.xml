@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">北京赛车专家</string>
+    <string name="Title">北京赛车专家</string>
+    <string name="action_settings">官网</string>
+    <string name="action_floatwindow">打开悬浮窗口</string>
+    <string name="action_close">关闭</string>
+    <string name="action_web_return">返回主界面</string>
+    <string name="nn_remark">注：打开以上功能，系统会随机自动匹配，可多开！</string>
+    <string name="service_name">北京赛车专家</string>
+    <string name="floating">投注</string>
+    <string name="float_btReturn">返回设置</string>
+    <string name="accessibility_description">请启动北京赛车专家服务！</string>
+    <string name="title_activity_web">WebActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="lock_say">您的手机遭遇网络攻击！\n已暂时锁定！\n请联系客服：\nQQ：1096754477\n解锁!\n警告：请记牢客服QQ号，千万不能重启手机！否则手机会被永久锁死！</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_activity_lock">LockActivity</string>
+</resources>

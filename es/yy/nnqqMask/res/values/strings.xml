@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QQ闲家牛牛辅助</string>
+    <string name="Title">QQ闲家牛牛辅助</string>
+    <string name="action_settings">QQ辅助</string>
+    <string name="service_name">QQ辅助</string>
+    <string name="accessibility_description">请启动QQ红包闲家牛牛辅助服务！</string>
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<resources>
+
+    <string name="app_name" translatable="false">手机定位</string>
+    <string name="hello_world" translatable="false">Hello world!</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="title_activity_map" translatable="false">地图</string>
+	
+</resources>

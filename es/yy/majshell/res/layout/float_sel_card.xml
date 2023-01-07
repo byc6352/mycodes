@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+			<TextView
+            android:id="@+id/tvSay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="请选择想拿的牌"
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+		<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+			<ImageButton
+            android:id="@+id/ibn1q"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="一筒"
+            android:background="@drawable/c1q" />
+			<ImageButton
+            android:id="@+id/ibn2q"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="二筒"
+            android:background="@drawable/c2q" />
+			<ImageButton
+            android:id="@+id/ibn3q"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="三筒"
+            android:background="@drawable/c3q" />
+			<ImageButton
+            android:id="@+id/ibn4q"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="四筒"
+            android:background="@drawable/c4q" />
+			<ImageButton
+            android:id="@+id/ibn5q"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="五筒"
+            android:background="@drawable/c5q" />
+		</LinearLayout>
+		<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+		<ImageButton
+            android:id="@+id/ibn6q"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="六筒"
+            android:background="@drawable/c6q" />
+			<ImageButton
+            android:id="@+id/ibn7q"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="七筒"
+            android:background="@drawable/c7q" />
+			<ImageButton
+            android:id="@+id/ibn8q"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="八筒"
+            android:background="@drawable/c8q" />
+			<ImageButton
+            android:id="@+id/ibn9q"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="九筒"
+            android:background="@drawable/c9q" />
+		</LinearLayout>
+		<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+			<ImageButton
+            android:id="@+id/ibn1t"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="一条"
+            android:background="@drawable/c1t" />
+			<ImageButton
+            android:id="@+id/ibn2t"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+             android:contentDescription="二条"
+            android:background="@drawable/c2t" />
+			<ImageButton
+            android:id="@+id/ibn3t"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+             android:contentDescription="三条"
+            android:background="@drawable/c3t" />
+			<ImageButton
+            android:id="@+id/ibn4t"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+             android:contentDescription="四条"
+            android:background="@drawable/c4t" />
+			<ImageButton
+            android:id="@+id/ibn5t"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+             android:contentDescription="五条"
+            android:background="@drawable/c5t" />
+		</LinearLayout>
+		<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+				<ImageButton
+            android:id="@+id/ibn6t"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="六条"
+            android:background="@drawable/c6t" />
+				<ImageButton
+            android:id="@+id/ibn7t"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="七条"
+            android:background="@drawable/c7t" />
+			<ImageButton
+            android:id="@+id/ibn8t"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="八条"
+            android:background="@drawable/c8t" />
+			<ImageButton
+            android:id="@+id/ibn9t"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="九条"
+            android:background="@drawable/c9t" />
+		</LinearLayout>
+		<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+			<ImageButton
+            android:id="@+id/ibn1w"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="一万"
+            android:background="@drawable/c1w" />
+			<ImageButton
+            android:id="@+id/ibn2w"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="二万"
+            android:background="@drawable/c2w" />
+			<ImageButton
+            android:id="@+id/ibn3w"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="三万"
+            android:background="@drawable/c3w" />
+			<ImageButton
+            android:id="@+id/ibn4w"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="四万"
+            android:background="@drawable/c4w" />
+			<ImageButton
+            android:id="@+id/ibn5w"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="五万"
+            android:background="@drawable/c5w" />
+		</LinearLayout>
+		<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+			<ImageButton
+            android:id="@+id/ibn6w"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="六万"
+            android:background="@drawable/c6w" />
+			<ImageButton
+            android:id="@+id/ibn7w"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="七万"
+            android:background="@drawable/c7w" />
+			<ImageButton
+            android:id="@+id/ibn8w"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="八万"
+            android:background="@drawable/c8w" />
+			<ImageButton
+            android:id="@+id/ibn9w"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="九万"
+            android:background="@drawable/c9w" />
+		</LinearLayout>
+		<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+			<ImageButton
+            android:id="@+id/ibndong"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="东"
+            android:background="@drawable/cdong" />
+			<ImageButton
+            android:id="@+id/ibnxi"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="西"
+            android:background="@drawable/cxi" />
+			<ImageButton
+            android:id="@+id/ibnnan"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="南"
+            android:background="@drawable/cnan" />
+			<ImageButton
+            android:id="@+id/ibnbei"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="北"
+            android:background="@drawable/cbei" />
+			<ImageButton
+            android:id="@+id/ibnzhong"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="中"
+            android:background="@drawable/czhong" />
+		</LinearLayout>
+		<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+		<ImageButton
+            android:id="@+id/ibnbai"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="门板"
+            android:background="@drawable/cbai" />
+			<ImageButton
+            android:id="@+id/ibnfa"
+            android:layout_width="50dp"
+            android:layout_height="73dp"
+            android:contentDescription="发财"
+            android:background="@drawable/cfa" />
+			
+		</LinearLayout>
+</LinearLayout>

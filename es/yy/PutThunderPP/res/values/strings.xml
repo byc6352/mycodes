@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">埋雷专家(碰碰群玩法)</string>
+    <string name="Title">埋雷专家(碰碰群玩法)</string>
+    <string name="action_settings">埋雷专家设置</string>
+    <string name="lei_sel_type">请选择雷的类型</string>
+    <string name="service_name">埋雷专家(碰碰群玩法)</string>
+    <string name="accessibility_description">请启动微信红包埋雷服务！</string>
+    <string name="floating">开始埋雷</string>
+
+</resources>
