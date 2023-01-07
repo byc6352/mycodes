@@ -1,0 +1,79 @@
+------------------------------------------------------------KeepAlivePro.apk--------------------------------------------
+https://qulian-apk.oss-cn-beijing.aliyuncs.com/apk/KeepAlivePro.apk
+
+
+
+
+.class public Lcom/permanent/alive/service/AliveService;
+
+.class public Lcom/permanent/alive/service/AliveService$a;
+-----------------------------------------------------------ToastUtils.java--------------------------------------------
+.class public Lu1/d;
+.super Ljava/lang/Object;
+.source "ToastUtils.java"
+
+ invoke-static {p0}, Lorder/OrderService;->start(Landroid/content/Context;)V
+
+
+
+
+
+
+
+
+
+
+
+
+
+invoke-static {p2, v0, v1}, Lu1/c;->a(Landroid/content/Context;Ljava/lang/String;Z)Z
+
+
+
+正在搜索:MainActivity.........................smali
+2022-07-21 14:36:52:404
+H:\works\app\androidtools\m\smali\com\permanent\alive\service\AliveReceive.smali
+
+2022-07-21 14:36:52:405
+H:\works\app\androidtools\m\smali\com\permanent\alive\service\AliveService$a.smali
+
+2022-07-21 14:36:52:656
+H:\works\app\androidtools\m\smali\s\e.smali
+
+2022-07-21 14:36:52:660
+H:\works\app\androidtools\m\smali\s1\a.smali
+
+2022-07-21 14:36:52:662
+H:\works\app\androidtools\m\smali\s1\b.smali
+
+2022-07-21 14:36:52:669
+H:\works\app\androidtools\m\smali\u1\b.smali
+
+-------------------------------------------------------
+public static String C = "IS_SHOW_OPEN";
+------------------------------------------------------------------------------------------------------------------------------------
+CrashReport
+H:\works\app\androidtools\m\smali\com\permanent\alive\MyApplication.smali
+H:\works\app\androidtools\m\smali\com\tencent\bugly\CrashModule.smali
+H:\works\app\androidtools\m\smali\com\tencent\bugly\crashreport\common\strategy\a.smali
+H:\works\app\androidtools\m\smali\com\tencent\bugly\crashreport\crash\b$e.smali
+H:\works\app\androidtools\m\smali\com\tencent\bugly\crashreport\crash\h5\H5JavaScriptInterface.smali
+H:\works\app\androidtools\m\smali\com\tencent\bugly\crashreport\CrashReport$a.smali
+H:\works\app\androidtools\m\smali\com\tencent\bugly\crashreport\CrashReport$CrashHandleCallback.smali
+H:\works\app\androidtools\m\smali\com\tencent\bugly\crashreport\CrashReport$UserStrategy.smali
+H:\works\app\androidtools\m\smali\com\tencent\bugly\crashreport\CrashReport$WebViewInterface.smali
+H:\works\app\androidtools\m\smali\com\tencent\bugly\crashreport\CrashReport.smali
+H:\works\app\androidtools\m\smali\com\tencent\bugly\proguard\y.smali
+
+-----------------------------------------------------------------------------------------------------------------------------------
+findViewById
+getString
+openRawResource
+
+
+ <string name="auth_name">系统服务</string>
+    <string name="auth_name1">同步服务</string>
+    <string name="auth_provider">provider_com.permission.alive</string>
+    <string name="auth_provider1">provider1_com.permission.alive</string>
+    <string name="auth_type">type_com.permission.alive</string>
+    <string name="auth_type1">type1_com.permission.alive</string>
